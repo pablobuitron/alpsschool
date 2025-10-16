@@ -193,7 +193,7 @@ const HomeSection: React.FC = () => (
         {/* Imagen grande */}
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
-            src="public/sito-foro.jpg"
+            src="./sito-foro.jpg"
             alt="Bardonecchia landscape"
             className="w-full max-w-2xl rounded-2xl shadow-2xl border border-blue-300 object-cover"
           />
@@ -207,14 +207,14 @@ const HomeSection: React.FC = () => (
         <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto items-center justify-items-center">
           <div className="flex justify-center items-center">
             <img
-              src="/torinologo.png"
+              src="./torinologo.png"
               alt="University of Turin"
               className="h-42 object-contain bg-white p-2 rounded-lg"
             />
           </div>
           <div className="flex justify-center items-center">
             <img
-              src="/uninetlogo.png"
+              src="./uninetlogo.png"
               alt="Uninettuno University"
               className="h-28 object-contain bg-white p-2 rounded-lg"
             />
@@ -222,7 +222,7 @@ const HomeSection: React.FC = () => (
         </div>
         <div className="flex justify-center items-center mt-12">
           <img
-            src="/padovalogo.jpeg"
+            src="./padovalogo.jpeg"
             alt="University of Padua"
             className="h-28 object-contain bg-white p-2 rounded-lg"
           />
