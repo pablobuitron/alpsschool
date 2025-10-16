@@ -171,7 +171,7 @@ const SectionWrapper = ({
 const HomeSection = () => (
   <section
     className="relative bg-cover bg-center bg-no-repeat text-white"
-    style={{ backgroundImage: "url('/sito-foro.jpg')" }}
+    style={{ backgroundImage: "url('public/sito-foro.jpg')" }}
   >
     <div className="absolute inset-0 bg-blue-900/70"></div>
     <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
@@ -196,14 +196,14 @@ const HomeSection = () => (
           {/* Top row: Turin + Uninettuno */}
           <div className="flex justify-center items-center">
             <img
-              src="/torinologo.png"
+              src="public/torinologo.png"
               alt="University of Turin"
               className="h-30 object-contain"
             />
           </div>
           <div className="flex justify-center items-center">
             <img
-              src="/uninetlogo.png"
+              src="public/uninetlogo.png"
               alt="Uninettuno University"
               className="h-28 object-contain"
             />
@@ -213,7 +213,7 @@ const HomeSection = () => (
         {/* Bottom row: Padova centered */}
         <div className="flex justify-center items-center mt-12">
           <img
-            src="/padovalogo.png"
+            src="public/padovalogo.jpeg"
             alt="University of Padua"
             className="h-28 object-contain"
           />
