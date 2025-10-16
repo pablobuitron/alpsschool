@@ -193,7 +193,7 @@ const HomeSection: React.FC = () => (
         {/* Imagen grande */}
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
-            src="/sito-foro.jpg"
+            src="public/sito-foro.jpg"
             alt="Bardonecchia landscape"
             className="w-full max-w-2xl rounded-2xl shadow-2xl border border-blue-300 object-cover"
           />
