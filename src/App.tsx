@@ -170,7 +170,7 @@ const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = (
   </div>
 );
 
-/* ---------- HOME (con logos de nuevo) ---------- */
+/* ---------- HOME ---------- */
 const HomeSection: React.FC = () => (
   <>
     {/* Hero azul */}
@@ -201,7 +201,7 @@ const HomeSection: React.FC = () => (
       </div>
     </section>
 
-    {/* Logos (parte blanca) */}
+    {/* Logos */}
     <section className="relative z-10 bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto items-center justify-items-center">
@@ -209,7 +209,7 @@ const HomeSection: React.FC = () => (
             <img
               src="/torinologo.png"
               alt="University of Turin"
-              className="h-32 object-contain bg-white p-2 rounded-lg"
+              className="h-42 object-contain bg-white p-2 rounded-lg"
             />
           </div>
           <div className="flex justify-center items-center">
@@ -222,7 +222,7 @@ const HomeSection: React.FC = () => (
         </div>
         <div className="flex justify-center items-center mt-12">
           <img
-            src="/padovalogo.png"
+            src="/padovalogo.jpeg"
             alt="University of Padua"
             className="h-28 object-contain bg-white p-2 rounded-lg"
           />
@@ -262,15 +262,15 @@ const CommitteesSection: React.FC<{
   scientificCommittee: Member[];
 }> = ({ organizingCommittee, scientificCommittee }) => (
   <SectionWrapper title="Committees">
-    <div className="max-w-3xl mx-auto space-y-10">
+    <div className="max-w-3xl mx-auto space-y-10 text-gray-800">
       <div>
         <h3 className="text-2xl font-semibold text-blue-900 mb-4">
           Organizing Committee
         </h3>
-        <ul className="space-y-1 text-gray-700">
+        <ul className="space-y-1">
           {organizingCommittee.map((m, i) => (
             <li key={i}>
-              {m.name} <span className="text-gray-500">({m.affiliation})</span>
+              {m.name} ({m.affiliation})
             </li>
           ))}
         </ul>
@@ -279,10 +279,10 @@ const CommitteesSection: React.FC<{
         <h3 className="text-2xl font-semibold text-blue-900 mb-4">
           Scientific Committee
         </h3>
-        <ul className="space-y-1 text-gray-700">
+        <ul className="space-y-1">
           {scientificCommittee.map((m, i) => (
             <li key={i}>
-              {m.name} <span className="text-gray-500">({m.affiliation})</span>
+              {m.name} ({m.affiliation})
             </li>
           ))}
         </ul>
@@ -291,7 +291,7 @@ const CommitteesSection: React.FC<{
   </SectionWrapper>
 );
 
-/* ---------- RESTO DE SECCIONES ---------- */
+/* ---------- WORKING GROUPS ---------- */
 const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
   scientificCommittee,
 }) => {
@@ -302,10 +302,6 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
     {
       names: ['Luisa Fermo', 'Giuseppe Rodriguez'],
       topic: 'Numerical integration and applications to integral equations',
-    },
-    {
-      names: ['Clemente Cesarano', 'Praveen Agarwal'],
-      topic: 'Operator theory in describing and analyzing special polynomials',
     },
     {
       names: ['Nicola Mastronardi', 'Francisco Marcellan'],
@@ -324,35 +320,24 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
       names: ['Amir Noorizadegan', 'Roberto Cavoretto'],
       topic: 'Meshless methods and scientific Machine Learning',
     },
+    {
+      names: ['Clemente Cesarano', 'Praveen Agarwal'],
+      topic: 'Operator theory in describing and analyzing special polynomials',
+    },
   ];
-
-  const sortedGroups = groups.sort((a, b) => {
-    const lastA = a.names[0].split(' ').slice(-1)[0].toLowerCase();
-    const lastB = b.names[0].split(' ').slice(-1)[0].toLowerCase();
-    return lastA.localeCompare(lastB);
-  });
 
   return (
     <SectionWrapper title="Working Groups">
-      <div className="max-w-3xl mx-auto text-gray-700 space-y-6">
-        <ol className="list-decimal list-inside space-y-3">
-          {sortedGroups.map((g, i) => (
+      <div className="max-w-3xl mx-auto text-gray-800 space-y-6">
+        <ol className="list-decimal list-inside space-y-4">
+          {groups.map((g, i) => (
             <li key={i}>
               <strong>
                 {g.names
-                  .sort((a, b) =>
-                    a.split(' ').slice(-1)[0].localeCompare(b.split(' ').slice(-1)[0])
-                  )
+                  .map((n) => `${n} (${affiliation(n)})`)
                   .join(' and ')}
                 :
               </strong>{' '}
-              {g.names.map((n) => (
-                <span key={n} className="text-gray-500">
-                  {' '}
-                  ({affiliation(n)})
-                </span>
-              ))}
-              <br />
               {g.topic}
             </li>
           ))}
@@ -367,9 +352,7 @@ const LecturersSection: React.FC = () => (
     <div className="max-w-3xl mx-auto space-y-6 text-gray-700">
       <div>
         <h3 className="text-xl font-semibold">Teresa Perez</h3>
-        <p className="italic">
-          Department of Mathematics, University of Granada, Spain
-        </p>
+        <p>Department of Mathematics, University of Granada, Spain</p>
         <p>
           “Orthogonal Polynomials in Several Variables: From Hermite to Zernike and
           Beyond. Applications in Optics.”
@@ -377,9 +360,7 @@ const LecturersSection: React.FC = () => (
       </div>
       <div>
         <h3 className="text-xl font-semibold">Nick Hale</h3>
-        <p className="italic">
-          Applied Mathematics, Stellenbosch University, South Africa
-        </p>
+        <p>Applied Mathematics, Stellenbosch University, South Africa</p>
         <p>“Computational Approximation with Cheb.”</p>
       </div>
     </div>
