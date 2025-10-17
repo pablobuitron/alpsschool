@@ -16,7 +16,7 @@ function App() {
     { name: 'Clemente Cesarano', affiliation: 'Uninettuno University, Italy' },
     { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
     { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
-    { name: 'Alvise Sommariva', affiliation: 'University of Padua, Italy' },
+    { name: 'Alvise Sommarima', affiliation: 'University of Padua, Italy' },
   ];
 
   const scientificCommittee: Member[] = [
@@ -33,7 +33,7 @@ function App() {
     { name: 'Donatella Occorsio', affiliation: 'University of Basilicata, Italy' },
     { name: 'Giuseppe Rodriguez', affiliation: 'University of Cagliari, Italy' },
     { name: 'Maria Grazia Russo', affiliation: 'University of Basilicata, Italy' },
-    { name: 'Alvise Sommariva', affiliation: 'University of Padua, Italy' },
+    { name: 'Alvise Sommarima', affiliation: 'University of Padua, Italy' },
   ];
 
   const navItems = [
@@ -297,7 +297,7 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
         'Approximation by Algebraic Functions: From One to Several Variables, with Applications',
     },
     {
-      names: ['Maria Grazia Russo', 'Donatella Occorsio'],
+      names: ['Donatella Occorsio', 'Maria Grazia Russo'],
       topic: 'Approximation methods for functional equations',
     },
     {
@@ -310,11 +310,6 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
     },
   ];
 
-  const isRussoOccorsioPair = (names: string[]) => {
-    const set = new Set(names.map((n) => n.split(' ').slice(-1)[0].toLowerCase()));
-    return set.has('russo') && set.has('occorsio') && names.length === 2;
-  };
-
   const sortNamesByLastName = (names: string[]) =>
     [...names].sort((a, b) => {
       const lastA = a.split(' ').slice(-1)[0].toLowerCase();
@@ -322,14 +317,10 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
       return lastA.localeCompare(lastB);
     });
 
-  const normalizedGroups = groups.map((g) => {
-    if (isRussoOccorsioPair(g.names)) {
-      const order = ['russo', 'occorsio'];
-      const map = new Map(g.names.map((n) => [n.split(' ').slice(-1)[0].toLowerCase(), n]));
-      return { ...g, names: order.map((ln) => map.get(ln)!) };
-    }
-    return { ...g, names: sortNamesByLastName(g.names) };
-  });
+  const normalizedGroups = groups.map((g) => ({
+    ...g,
+    names: sortNamesByLastName(g.names),
+  }));
 
   return (
     <SectionWrapper title="Working Groups">
@@ -376,7 +367,7 @@ const LecturersSection: React.FC = () => (
       <div>
         <h3 className="text-xl font-semibold">Nick Hale</h3>
         <p>Applied Mathematics, Stellenbosch University, South Africa</p>
-        <p>“Computational Approximation with Cheb.”</p>
+        <p>“Computational Approximation with Chebfun.”</p>
       </div>
     </div>
   </SectionWrapper>
