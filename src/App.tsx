@@ -1,49 +1,44 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
-/* ---------- TYPES ---------- */
 interface Member {
   name: string;
   affiliation: string;
 }
 
-/* ---------- MAIN APP ---------- */
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
   /* ---------- DATA ---------- */
+  // Orden EXACTO que diste para Organizing Committee
   const organizingCommittee: Member[] = [
-    { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
-    { name: 'Alvise Sommariva', affiliation: 'University of Padua, Italy' },
+    { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
     { name: 'Clemente Cesarano', affiliation: 'Uninettuno University, Italy' },
     { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
-    { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
-  ];
-
-  const scientificCommittee: Member[] = [
-    { name: 'Amir Noorizadegan', affiliation: 'Hong Kong Baptist University' },
     { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
     { name: 'Alvise Sommarima', affiliation: 'University of Padua, Italy' },
-    { name: 'Clemente Cesarano', affiliation: 'Uninettuno University' },
-    { name: 'Donatella Occorsio', affiliation: 'University of Basilicata, Italy' },
-    { name: "Francesco Dell'Accio", affiliation: 'University of Calabria, Italy' },
-    { name: 'Francisco Marcellan', affiliation: 'University Carlos III Madrid, Spain' },
-    { name: 'Giuseppe Rodriguez', affiliation: 'University of Cagliari, Italy' },
-    { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
-    { name: 'Luisa Fermo', affiliation: 'University of Cagliari, Italy' },
-    { name: 'Maria Grazia Russo', affiliation: 'University of Basilicata, Italy' },
-    { name: 'Nicola Mastronardi', affiliation: 'IAC - CNR, Italy' },
-    { name: 'Praveen Agarwal', affiliation: 'ANAND ICE College, Jaipur, India' },
-    { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
   ];
 
-  const sortByLastName = (arr: Member[]) =>
-    [...arr].sort((a, b) => {
-      const lastA = a.name.split(' ').slice(-1)[0].toLowerCase();
-      const lastB = b.name.split(' ').slice(-1)[0].toLowerCase();
-      return lastA.localeCompare(lastB);
-    });
+  // Orden base que diste para Scientific Committee,
+  // aplicando SOLO los 2 cambios: Cavoretto debajo de Cesarano
+  // y De Rossi debajo de Dell'Accio.
+  const scientificCommittee: Member[] = [
+    { name: 'Praveen Agarwal', affiliation: 'ANAND ICE College, Jaipur, India' },
+    { name: 'Clemente Cesarano', affiliation: 'Uninettuno University' },
+    { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
+    { name: "Francesco Dell'Accio", affiliation: 'University of Calabria, Italy' },
+    { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
+    { name: 'Luisa Fermo', affiliation: 'University of Cagliari, Italy' },
+    { name: 'Francisco Marcellan', affiliation: 'University Carlos III Madrid, Spain' },
+    { name: 'Nicola Mastronardi', affiliation: 'IAC - CNR, Italy' },
+    { name: 'Amir Noorizadegan', affiliation: 'Hong Kong Baptist University' },
+    { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
+    { name: 'Donatella Occorsio', affiliation: 'University of Basilicata, Italy' },
+    { name: 'Giuseppe Rodriguez', affiliation: 'University of Cagliari, Italy' },
+    { name: 'Maria Grazia Russo', affiliation: 'University of Basilicata, Italy' },
+    { name: 'Alvise Sommarima', affiliation: 'University of Padua, Italy' },
+  ];
 
   const navItems = [
     'Home',
@@ -51,6 +46,7 @@ function App() {
     'Committees',
     'Lecturers',
     'Working Groups',
+    'Posters',
     'Program',
     'Registration',
     'Venue',
@@ -70,14 +66,16 @@ function App() {
       case 'committees':
         return (
           <CommitteesSection
-            organizingCommittee={sortByLastName(organizingCommittee)}
-            scientificCommittee={sortByLastName(scientificCommittee)}
+            organizingCommittee={organizingCommittee}
+            scientificCommittee={scientificCommittee}
           />
         );
       case 'lecturers':
         return <LecturersSection />;
       case 'working-groups':
         return <WorkingGroupsSection scientificCommittee={scientificCommittee} />;
+      case 'posters':
+        return <PostersSection />;
       case 'program':
         return <ProgramSection />;
       case 'registration':
@@ -91,13 +89,10 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <h1 className="text-xl font-bold text-blue-900">AASM 2026</h1>
-
-            {/* Desktop menu */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 {navItems.map((item) => (
@@ -115,8 +110,6 @@ function App() {
                 ))}
               </div>
             </div>
-
-            {/* Mobile menu toggle */}
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -128,7 +121,6 @@ function App() {
           </div>
         </div>
 
-        {/* Mobile dropdown */}
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -164,7 +156,8 @@ const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = (
     <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20 text-center">
       <h2 className="text-4xl font-bold">{title}</h2>
     </section>
-    <section className="py-16 bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Tipografía base consistente en todas las secciones de contenido */}
+    <section className="py-16 bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-800 text-base leading-relaxed">
       {children}
     </section>
   </div>
@@ -173,10 +166,8 @@ const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = (
 /* ---------- HOME ---------- */
 const HomeSection: React.FC = () => (
   <>
-    {/* Hero azul */}
     <section className="relative bg-gradient-to-br from-blue-800 via-blue-700 to-blue-600 text-white min-h-screen py-32 flex items-center">
       <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row items-center justify-between gap-16 w-full">
-        {/* Texto */}
         <div className="flex-1 text-left space-y-8">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
             Alps Approximation <br /> School and Meeting
@@ -190,7 +181,6 @@ const HomeSection: React.FC = () => (
           </div>
         </div>
 
-        {/* Imagen grande */}
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
             src="./sito-foro.jpg"
@@ -201,7 +191,6 @@ const HomeSection: React.FC = () => (
       </div>
     </section>
 
-    {/* Logos */}
     <section className="relative z-10 bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto items-center justify-items-center">
@@ -235,7 +224,7 @@ const HomeSection: React.FC = () => (
 /* ---------- ABOUT ---------- */
 const AboutSection: React.FC = () => (
   <SectionWrapper title="About AASM 2026">
-    <div className="max-w-3xl mx-auto text-gray-700 space-y-4 leading-relaxed">
+    <div className="max-w-3xl mx-auto space-y-4">
       <p className="text-lg font-semibold">
         Summer School and Scientific Meeting on Approximation Theory
       </p>
@@ -262,7 +251,7 @@ const CommitteesSection: React.FC<{
   scientificCommittee: Member[];
 }> = ({ organizingCommittee, scientificCommittee }) => (
   <SectionWrapper title="Committees">
-    <div className="max-w-3xl mx-auto space-y-10 text-gray-800">
+    <div className="max-w-3xl mx-auto space-y-10">
       <div>
         <h3 className="text-2xl font-semibold text-blue-900 mb-4">
           Organizing Committee
@@ -298,6 +287,7 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
   const affiliation = (name: string) =>
     scientificCommittee.find((p) => p.name.includes(name))?.affiliation || '';
 
+  // Datos de grupos. IMPORTANTE: en el grupo Russo/Occorsio, Russo va primero por tu indicación.
   const groups = [
     {
       names: ['Luisa Fermo', 'Giuseppe Rodriguez'],
@@ -305,7 +295,7 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
     },
     {
       names: ['Nicola Mastronardi', 'Francisco Marcellan'],
-      topic: '[To be announced]',
+      topic: 'Sobolev orthogonal polynomials: theoretical and computational aspects',
     },
     {
       names: ["Francesco Dell'Accio"],
@@ -313,7 +303,8 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
         'Approximation by Algebraic Functions: From One to Several Variables, with Applications',
     },
     {
-      names: ['Donatella Occorsio', 'Maria Grazia Russo'],
+      // TU ORDEN: Russo primero (aunque alfabéticamente por apellido sería Occorsio).
+      names: ['Maria Grazia Russo', 'Donatella Occorsio'],
       topic: 'Approximation methods for functional equations',
     },
     {
@@ -326,19 +317,44 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
     },
   ];
 
+  // Ordenar por apellido dentro de cada grupo,
+  // EXCEPTO el grupo que contiene exactamente Russo y Occorsio (se respeta tu orden: Russo primero).
+  const isRussoOccorsioPair = (names: string[]) => {
+    const set = new Set(names.map((n) => n.split(' ').slice(-1)[0].toLowerCase()));
+    return set.has('russo') && set.has('occorsio') && names.length === 2;
+  };
+
+  const sortNamesByLastName = (names: string[]) =>
+    [...names].sort((a, b) => {
+      const lastA = a.split(' ').slice(-1)[0].toLowerCase();
+      const lastB = b.split(' ').slice(-1)[0].toLowerCase();
+      return lastA.localeCompare(lastB);
+    });
+
+  const normalizedGroups = groups.map((g) => {
+    if (isRussoOccorsioPair(g.names)) {
+      // Forzamos el orden específico pedido: Russo primero
+      const order = ['russo', 'occorsio'];
+      const byMap = new Map(g.names.map((n) => [n.split(' ').slice(-1)[0].toLowerCase(), n]));
+      return { ...g, names: order.map((ln) => byMap.get(ln)!) };
+    }
+    // Resto de grupos: ordenar por apellido
+    return { ...g, names: sortNamesByLastName(g.names) };
+  });
+
   return (
     <SectionWrapper title="Working Groups">
-      <div className="max-w-3xl mx-auto text-gray-800 space-y-6">
+      <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
         <ol className="list-decimal list-inside space-y-4">
-          {groups.map((g, i) => (
+          {normalizedGroups.map((g, i) => (
             <li key={i}>
-              <strong>
-                {g.names
-                  .map((n) => `${n} (${affiliation(n)})`)
-                  .join(' and ')}
-                :
-              </strong>{' '}
-              {g.topic}
+              {g.names.map((n, idx) => (
+                <React.Fragment key={n}>
+                  <strong>{n}</strong> ({affiliation(n)})
+                  {idx < g.names.length - 1 ? ' and ' : ''}
+                </React.Fragment>
+              ))}
+              : {g.topic}
             </li>
           ))}
         </ol>
@@ -347,15 +363,26 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
   );
 };
 
+/* ---------- POSTERS ---------- */
+const PostersSection: React.FC = () => (
+  <SectionWrapper title="Posters">
+    <p className="text-center text-gray-600">
+      Information about poster submissions and guidelines will be available soon.
+    </p>
+  </SectionWrapper>
+);
+
+/* ---------- LECTURERS ---------- */
 const LecturersSection: React.FC = () => (
   <SectionWrapper title="Lecturers">
-    <div className="max-w-3xl mx-auto space-y-6 text-gray-700">
+    {/* Tipografía igual que Committees/Working Groups (text-base); nombres a text-xl como antes */}
+    <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
       <div>
         <h3 className="text-xl font-semibold">Teresa Perez</h3>
         <p>Department of Mathematics, University of Granada, Spain</p>
         <p>
-          “Orthogonal Polynomials in Several Variables: From Hermite to Zernike and
-          Beyond. Applications in Optics.”
+          “Orthogonal Polynomials in Several Variables: From Hermite to Zernike
+          and Beyond. Applications in Optics.”
         </p>
       </div>
       <div>
@@ -367,6 +394,7 @@ const LecturersSection: React.FC = () => (
   </SectionWrapper>
 );
 
+/* ---------- PROGRAM / REGISTRATION / VENUE ---------- */
 const ProgramSection: React.FC = () => (
   <SectionWrapper title="Program">
     <p className="text-center text-gray-600">
