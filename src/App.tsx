@@ -11,18 +11,14 @@ function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   /* ---------- DATA ---------- */
-  // Orden EXACTO que diste para Organizing Committee
   const organizingCommittee: Member[] = [
     { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
     { name: 'Clemente Cesarano', affiliation: 'Uninettuno University, Italy' },
-    { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
     { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
+    { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
     { name: 'Alvise Sommarima', affiliation: 'University of Padua, Italy' },
   ];
 
-  // Orden base que diste para Scientific Committee,
-  // aplicando SOLO los 2 cambios: Cavoretto debajo de Cesarano
-  // y De Rossi debajo de Dell'Accio.
   const scientificCommittee: Member[] = [
     { name: 'Praveen Agarwal', affiliation: 'ANAND ICE College, Jaipur, India' },
     { name: 'Clemente Cesarano', affiliation: 'Uninettuno University' },
@@ -156,7 +152,6 @@ const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = (
     <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20 text-center">
       <h2 className="text-4xl font-bold">{title}</h2>
     </section>
-    {/* Tipografía base consistente en todas las secciones de contenido */}
     <section className="py-16 bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-800 text-base leading-relaxed">
       {children}
     </section>
@@ -287,7 +282,6 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
   const affiliation = (name: string) =>
     scientificCommittee.find((p) => p.name.includes(name))?.affiliation || '';
 
-  // Datos de grupos. IMPORTANTE: en el grupo Russo/Occorsio, Russo va primero por tu indicación.
   const groups = [
     {
       names: ['Luisa Fermo', 'Giuseppe Rodriguez'],
@@ -303,7 +297,6 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
         'Approximation by Algebraic Functions: From One to Several Variables, with Applications',
     },
     {
-      // TU ORDEN: Russo primero (aunque alfabéticamente por apellido sería Occorsio).
       names: ['Maria Grazia Russo', 'Donatella Occorsio'],
       topic: 'Approximation methods for functional equations',
     },
@@ -317,8 +310,6 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
     },
   ];
 
-  // Ordenar por apellido dentro de cada grupo,
-  // EXCEPTO el grupo que contiene exactamente Russo y Occorsio (se respeta tu orden: Russo primero).
   const isRussoOccorsioPair = (names: string[]) => {
     const set = new Set(names.map((n) => n.split(' ').slice(-1)[0].toLowerCase()));
     return set.has('russo') && set.has('occorsio') && names.length === 2;
@@ -333,12 +324,10 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
 
   const normalizedGroups = groups.map((g) => {
     if (isRussoOccorsioPair(g.names)) {
-      // Forzamos el orden específico pedido: Russo primero
       const order = ['russo', 'occorsio'];
-      const byMap = new Map(g.names.map((n) => [n.split(' ').slice(-1)[0].toLowerCase(), n]));
-      return { ...g, names: order.map((ln) => byMap.get(ln)!) };
+      const map = new Map(g.names.map((n) => [n.split(' ').slice(-1)[0].toLowerCase(), n]));
+      return { ...g, names: order.map((ln) => map.get(ln)!) };
     }
-    // Resto de grupos: ordenar por apellido
     return { ...g, names: sortNamesByLastName(g.names) };
   });
 
@@ -375,7 +364,6 @@ const PostersSection: React.FC = () => (
 /* ---------- LECTURERS ---------- */
 const LecturersSection: React.FC = () => (
   <SectionWrapper title="Lecturers">
-    {/* Tipografía igual que Committees/Working Groups (text-base); nombres a text-xl como antes */}
     <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
       <div>
         <h3 className="text-xl font-semibold">Teresa Perez</h3>
