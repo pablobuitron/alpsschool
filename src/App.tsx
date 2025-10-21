@@ -392,10 +392,202 @@ const RegistrationSection: React.FC = () => (
 
 const VenueSection: React.FC = () => (
   <SectionWrapper title="Venue">
-    <p className="text-center text-gray-600">
-      Venue details will be provided later.
-    </p>
+    <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-6">
+      <div className="text-center">
+        <p className="font-semibold">VILLAGGIO OLIMPICO BARDONECCHIA</p>
+        <p>Viale della Vittoria 46 – 10052 Bardonecchia (TO)</p>
+        <p>
+          <a
+            href="https://www.villaggiobardonecchia.it"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 underline hover:text-blue-900"
+          >
+            www.villaggiobardonecchia.it
+          </a>
+        </p>
+      </div>
+
+      <p>
+        The venue is in the <strong>Villaggio Olimpico Bardonecchia</strong>, and can be
+        reached with public transports as follows:
+      </p>
+
+      <ol className="list-decimal list-inside space-y-2">
+        <li>
+          arrive to the <strong>Torino Porta Nuova railway station</strong> in train or bus;
+        </li>
+        <li>
+          arrive to the <strong>Bardonecchia railway station</strong> in train (from the
+          Torino Porta Nuova railway station);
+        </li>
+        <li>
+          arrive to the <strong>Villaggio Olimpico Bardonecchia</strong> (from the
+          Bardonecchia railway station)
+        </li>
+      </ol>
+
+      <div>
+        <p className="font-semibold mt-6">
+          Arrive to the Torino Porta Nuova railway station:
+        </p>
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            if you arrive in Torino by train, you should aim for the Torino Porta Nuova
+            railway station.
+          </li>
+          <li>
+            if you arrive by plane at the{" "}
+            <a
+              href="https://www.aeroportoditorino.it/en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              Torino Airport
+            </a>{" "}
+            there are buses going to the Torino Porta Nuova railway station in ~45 min (the
+            timetables are available{" "}
+            <a
+              href="https://torino.arriva.it/en/airport-line-torino-malpensa-airport/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              here
+            </a>
+            ).
+          </li>
+          <li>
+            if you arrive by plane at the{" "}
+            <a
+              href="https://www.milanomalpensa-airport.com/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              Milano Malpensa Airport
+            </a>{" "}
+            there are buses going to Torino Autostazione, in front of the Torino Porta Susa
+            railway station, in ~2 hours (the timetables are available{" "}
+            <a
+              href="https://torino.arriva.it/en/airport-line-torino-malpensa-airport/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              here
+            </a>
+            ). Then you can take the metro/subway to reach Torino Porta Nuova railway
+            station: 3 stops in “Lingotto” direction from “Porta Susa” to “Porta Nuova”
+            (information about tickets available{" "}
+            <a
+              href="https://www.gtt.to.it/cms/en/fares"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              here
+            </a>
+            ).
+          </li>
+          <li>
+            If you arrive by plane at the{" "}
+            <a
+              href="https://www.milanolinate-airport.com/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              Milano Linate Airport
+            </a>{" "}
+            or at the{" "}
+            <a
+              href="https://www.milanbergamoairport.it/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              Milano Bergamo Airport
+            </a>
+            , you should get by bus to the Milano Centrale railway station (timetables and
+            tickets available{" "}
+            <a
+              href="https://www.airportbusexpress.it/?lang=en-GB"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              here
+            </a>
+            ), and then reach by train the Torino Porta Nuova railway station (trains
+            provided by{" "}
+            <a
+              href="https://www.trenitalia.com/en.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              Trenitalia
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://www.italotreno.it/en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              Italo
+            </a>
+            ).
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p className="font-semibold mt-6">
+          Arrive to the Bardonecchia railway station:
+        </p>
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            if you are at the Torino Porta Nuova railway station, you should take a train
+            going to Bardonecchia (~1 hr 30 min, timetables available{" "}
+            <a
+              href="https://www.trenitalia.com/en.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              here
+            </a>
+            ).
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p className="font-semibold mt-6">
+          Arrive to the Villaggio Olimpico Bardonecchia:
+        </p>
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            if you are at the Bardonecchia railway station, you can reach the Villaggio
+            Olimpico Bardonecchia in ~12 min by foot (~850 m), see the path{" "}
+            <a
+              href="https://www.google.com/maps/dir/Bardonecchia,+Bardonecchia,+TO/Villaggio+Olimpico,+Viale+della+Vittoria,+Bardonecchia+TO/@45.074663,6.7002626,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4789ec9235e3afeb:0xff6769dd8185fb9c!2m2!1d6.7098611!2d45.0763604!1m5!1m1!1s0x4789ecf2496d3377:0xa0af6595cf98ac2a!2m2!1d6.701289!2d45.0731627!3e2?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline hover:text-blue-900"
+            >
+              here
+            </a>
+            .
+          </li>
+        </ul>
+      </div>
+    </div>
   </SectionWrapper>
 );
+
 
 export default App;
