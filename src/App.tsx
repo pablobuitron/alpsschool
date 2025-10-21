@@ -8,7 +8,11 @@ interface Member {
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState(() => {
+    // Detectar hash al cargar la página
+    const hash = window.location.hash.replace('#', '');
+    return hash || 'home';
+  });
 
   /* ---------- DATA ---------- */
   const organizingCommittee: Member[] = [
@@ -49,8 +53,12 @@ function App() {
   ];
 
   const handleNavClick = (section: string) => {
-    setActiveSection(section.toLowerCase().replace(/ /g, '-'));
+    const sectionId = section.toLowerCase().replace(/ /g, '-');
+    setActiveSection(sectionId);
     setIsMenuOpen(false);
+
+    // Actualizar hash en la URL
+    window.location.hash = sectionId;
   };
 
   const renderContent = () => {
