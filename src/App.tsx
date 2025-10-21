@@ -486,8 +486,8 @@ const VenueSection: React.FC = () => (
             >
               here
             </a>
-            ). Then you can take the metro/subway to reach Torino Porta Nuova railway
-            station: 3 stops in “Lingotto” direction from “Porta Susa” to “Porta Nuova”
+            ). And then you can take the metro/subway in order to get to the Torino Porta Nuova railway
+            station: 3 stops in “Lingotto” direction from “Porta Susa” stop to “Porta Nuova” stop
             (information about tickets available{" "}
             <a
               href="https://www.gtt.to.it/cms/en/fares"
@@ -518,7 +518,7 @@ const VenueSection: React.FC = () => (
             >
               Milano Bergamo Airport
             </a>
-            , you should get by bus to the Milano Centrale railway station (timetables and
+             you should get by bus to the Milano Centrale railway station (timetables and
             tickets available{" "}
             <a
               href="https://www.airportbusexpress.it/?lang=en-GB"
@@ -528,7 +528,7 @@ const VenueSection: React.FC = () => (
             >
               here
             </a>
-            ), and then reach by train the Torino Porta Nuova railway station (trains
+            ), and then reach by train the Torino Porta Nuova railway station (there are trains
             provided by{" "}
             <a
               href="https://www.trenitalia.com/en.html"
@@ -559,7 +559,7 @@ const VenueSection: React.FC = () => (
         <ul className="list-disc list-outside ml-6 space-y-2">
           <li>
             if you are at the Torino Porta Nuova railway station, you should take a train
-            going to Bardonecchia (~1 hr 30 min, timetables available{" "}
+            going to Bardonecchia in ~1 hr 30 min (timetables are available{" "}
             <a
               href="https://www.trenitalia.com/en.html"
               target="_blank"
