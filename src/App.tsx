@@ -16,7 +16,7 @@ function App() {
     { name: 'Clemente Cesarano', affiliation: 'Uninettuno University, Italy' },
     { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
     { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
-    { name: 'Alvise Sommarima', affiliation: 'University of Padua, Italy' },
+    { name: 'Alvise Sommariva', affiliation: 'University of Padua, Italy' },
   ];
 
   const scientificCommittee: Member[] = [
@@ -33,7 +33,7 @@ function App() {
     { name: 'Donatella Occorsio', affiliation: 'University of Basilicata, Italy' },
     { name: 'Giuseppe Rodriguez', affiliation: 'University of Cagliari, Italy' },
     { name: 'Maria Grazia Russo', affiliation: 'University of Basilicata, Italy' },
-    { name: 'Alvise Sommarima', affiliation: 'University of Padua, Italy' },
+    { name: 'Alvise Sommariva', affiliation: 'University of Padua, Italy' },
   ];
 
   const navItems = [
