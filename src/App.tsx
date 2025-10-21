@@ -421,7 +421,7 @@ const VenueSection: React.FC = () => (
         reached with public transports as follows:
       </p>
 
-      <ol className="list-decimal list-inside space-y-2">
+      <ol className="list-decimal list-outside ml-6 space-y-2">
         <li>
           arrive to the <strong>Torino Porta Nuova railway station</strong> in train or bus;
         </li>
@@ -436,10 +436,10 @@ const VenueSection: React.FC = () => (
       </ol>
 
       <div>
-        <p className="font-semibold mt-6">
+        <p className="font-semibold mt-8">
           Arrive to the Torino Porta Nuova railway station:
         </p>
-        <ul className="list-disc list-inside space-y-2">
+        <ul className="list-disc list-outside ml-6 space-y-2">
           <li>
             if you arrive in Torino by train, you should aim for the Torino Porta Nuova
             railway station.
@@ -553,10 +553,10 @@ const VenueSection: React.FC = () => (
       </div>
 
       <div>
-        <p className="font-semibold mt-6">
+        <p className="font-semibold mt-8">
           Arrive to the Bardonecchia railway station:
         </p>
-        <ul className="list-disc list-inside space-y-2">
+        <ul className="list-disc list-outside ml-6 space-y-2">
           <li>
             if you are at the Torino Porta Nuova railway station, you should take a train
             going to Bardonecchia (~1 hr 30 min, timetables available{" "}
@@ -574,10 +574,10 @@ const VenueSection: React.FC = () => (
       </div>
 
       <div>
-        <p className="font-semibold mt-6">
+        <p className="font-semibold mt-8">
           Arrive to the Villaggio Olimpico Bardonecchia:
         </p>
-        <ul className="list-disc list-inside space-y-2">
+        <ul className="list-disc list-outside ml-6 space-y-2">
           <li>
             if you are at the Bardonecchia railway station, you can reach the Villaggio
             Olimpico Bardonecchia in ~12 min by foot (~850 m), see the path{" "}
@@ -596,6 +596,7 @@ const VenueSection: React.FC = () => (
     </div>
   </SectionWrapper>
 );
+
 
 
 export default App;
