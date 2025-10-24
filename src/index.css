@@ -5,4 +5,4 @@
 /* ---------- Global font configuration (uniform) ---------- */
 body {
   @apply font-sans text-gray-800 bg-white leading-relaxed;
-}
+} 
