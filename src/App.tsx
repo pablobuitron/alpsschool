@@ -46,7 +46,7 @@ function App() {
     'Committees',
     'Lecturers',
     'Working Groups',
-    'Posters',
+    'Posters and Seminars',
     'Program',
     'Registration',
     'Venue',
@@ -227,26 +227,85 @@ const HomeSection: React.FC = () => (
 /* ---------- ABOUT ---------- */
 const AboutSection: React.FC = () => (
   <SectionWrapper title="About AASM 2026">
-    <div className="max-w-3xl mx-auto space-y-4">
-      <p className="text-lg font-semibold">
-        Summer School and Scientific Meeting on Approximation Theory
-      </p>
+    <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-4">
       <p>
-        This scientific meeting and summer school will take place in Bardonecchia (To)
-        from June 1 to 5, 2026.
+        The <strong>Alps Approximation School and Meeting (AASM 2026)</strong> will be held
+        in <strong>Bardonecchia (TO), Italy</strong>, from <strong>June 1 to 5, 2026</strong>.
       </p>
+
       <p>
-        The program focuses on Approximation Theory, combining theoretical insights
-        and applied implementations. Its main objective is to develop effective
-        solutions for mathematical models arising in industrial and applied sciences.
+        This international event combines a <strong>Summer School</strong> and a{" "}
+        <strong>Scientific Meeting</strong> devoted to{" "}
+        <strong>Approximation Theory</strong>, bringing together mathematicians,
+        researchers, and students interested in both fundamental advances and applied
+        perspectives.
       </p>
+
       <p>
-        The school will include lectures, collaborative working groups, and software
-        development activities, targeting PhD students, post-docs, and young researchers.
+        The program will explore <strong>theoretical frameworks</strong>,{" "}
+        <strong>computational methods</strong>, and{" "}
+        <strong>applications</strong> of approximation techniques to problems arising in{" "}
+        <strong>industrial and applied sciences</strong>.
       </p>
+
+      <p>
+        The School will feature <strong>lectures by leading experts</strong>,{" "}
+        <strong>collaborative working sessions</strong>, and{" "}
+        <strong>hands-on software development activities</strong>, with a particular focus
+        on <strong>PhD students</strong>, <strong>postdoctoral fellows</strong>, and{" "}
+        <strong>early-career researchers</strong>.
+      </p>
+
+      <p className="font-semibold mt-8">Confirmed Lecturers</p>
+      <ul className="list-disc list-outside ml-6 space-y-2">
+        <li>
+          <strong>Teresa Pérez</strong> (University of Granada, Spain):{" "}
+          <em>
+            “Orthogonal Polynomials in Several Variables: From Hermite to Zernike and
+            Beyond. Applications in Optics.”
+          </em>
+        </li>
+        <li>
+          <strong>Nick Hale</strong> (Stellenbosch University, South Africa):{" "}
+          <em>“Computational Approximation with Chebfun.”</em>
+        </li>
+      </ul>
+
+      <p className="font-semibold mt-8">Working Groups</p>
+      <ul className="list-disc list-outside ml-6 space-y-2">
+        <li>
+          <strong>Luisa Fermo</strong> and <strong>Giuseppe Rodriguez</strong> (University
+          of Cagliari, Italy): Numerical integration and applications to integral equations
+        </li>
+        <li>
+          <strong>Francisco Marcellán</strong> (University Carlos III Madrid, Spain) and{" "}
+          <strong>Nicola Mastronardi</strong> (IAC – CNR, Italy): Sobolev orthogonal
+          polynomials: theoretical and computational aspects
+        </li>
+        <li>
+          <strong>Francesco Dell’Accio</strong> (University of Calabria, Italy):
+          Approximation by algebraic functions: from one to several variables, with
+          applications
+        </li>
+        <li>
+          <strong>Donatella Occorsio</strong> and <strong>Maria Grazia Russo</strong>{" "}
+          (University of Basilicata, Italy): Approximation methods for functional equations
+        </li>
+        <li>
+          <strong>Roberto Cavoretto</strong> (University of Turin, Italy) and{" "}
+          <strong>Amir Noorizadegan</strong> (Hong Kong Baptist University): Meshless
+          methods and scientific machine learning
+        </li>
+        <li>
+          <strong>Praveen Agarwal</strong> (ANAND ICE College, Jaipur, India) and{" "}
+          <strong>Clemente Cesarano</strong> (Uninettuno University): Operator theory in
+          describing and analyzing special polynomials
+        </li>
+      </ul>
     </div>
   </SectionWrapper>
 );
+
 
 /* ---------- COMMITTEES ---------- */
 const CommitteesSection: React.FC<{
@@ -353,7 +412,7 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
 
 /* ---------- POSTERS ---------- */
 const PostersSection: React.FC = () => (
-  <SectionWrapper title="Posters">
+  <SectionWrapper title="Posters and Seminars">
     <p className="text-center text-gray-600">
       Information about poster submissions and guidelines will be available soon.
     </p>
