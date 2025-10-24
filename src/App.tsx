@@ -78,7 +78,7 @@ function App() {
         return <LecturersSection />;
       case 'working-groups':
         return <WorkingGroupsSection scientificCommittee={scientificCommittee} />;
-      case 'posters':
+      case 'posters-and-seminars':
         return <PostersSection />;
       case 'program':
         return <ProgramSection />;
