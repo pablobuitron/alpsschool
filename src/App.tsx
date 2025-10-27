@@ -46,7 +46,7 @@ function App() {
     'Committees',
     'Lecturers',
     'Working Groups',
-    'Posters',
+    'Posters and Seminars',
     'Program',
     'Registration',
     'Venue',
@@ -78,7 +78,7 @@ function App() {
         return <LecturersSection />;
       case 'working-groups':
         return <WorkingGroupsSection scientificCommittee={scientificCommittee} />;
-      case 'posters':
+      case 'posters-and-seminars':
         return <PostersSection />;
       case 'program':
         return <ProgramSection />;
@@ -412,7 +412,7 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
 
 /* ---------- POSTERS ---------- */
 const PostersSection: React.FC = () => (
-  <SectionWrapper title="Posters">
+  <SectionWrapper title="Posters and Seminars">
     <p className="text-center text-gray-600">
       Information about poster submissions and guidelines will be available soon.
     </p>
