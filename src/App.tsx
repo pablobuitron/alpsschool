@@ -426,8 +426,8 @@ const PostersSection: React.FC = () => (
       <p>
         Participants are encouraged to present their research results during the poster session.
         Poster abstracts (one page in PDF format) should be submitted by <strong>February 28, 2026</strong>,
-        via email to <strong>Incoronata Notarangelo</strong> (incoronata.notarangelo[at]unito[dot]it)
-        and <strong>Alvise Sommariva</strong> (alvise[at]math[dot]unipd[dot]it).
+        via email to <strong>Incoronata Notarangelo</strong> (incoronata.notarangelo@unito.it)
+        and <strong>Alvise Sommariva</strong> (alvise@math.unipd.it).
       </p>
       <p>
         <strong>Notification of acceptance</strong> will be sent by <strong>March 15, 2026</strong>.
