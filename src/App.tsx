@@ -256,6 +256,7 @@ const AboutSection: React.FC = () => (
         <strong>early-career researchers</strong>.
       </p>
 
+      {/* Confirmed Lecturers */}
       <p className="font-semibold mt-8">Confirmed Lecturers</p>
       <ul className="list-disc list-outside ml-6 space-y-2">
         <li>
@@ -271,6 +272,7 @@ const AboutSection: React.FC = () => (
         </li>
       </ul>
 
+      {/* Working Groups */}
       <p className="font-semibold mt-8">Working Groups</p>
       <ul className="list-disc list-outside ml-6 space-y-2">
         <li>
@@ -298,10 +300,17 @@ const AboutSection: React.FC = () => (
         </li>
         <li>
           <strong>Praveen Agarwal</strong> (ANAND ICE College, Jaipur, India) and{" "}
-          <strong>Clemente Cesarano</strong> (Uninettuno University): Operator theory in
+          <strong>Clemente Cesarano</strong> (Uninettunno University): Operator theory in
           describing and analyzing special polynomials
         </li>
       </ul>
+
+      {/* Poster session (nuevo bloque) */}
+      <p className="font-semibold mt-8">Poster session</p>
+      <p>
+        <strong>Incoronata Notarangelo</strong> (University of Turin, Italy) and{" "}
+        <strong>Alvise Sommariva</strong> (University of Padua, Italy)
+      </p>
     </div>
   </SectionWrapper>
 );
@@ -413,11 +422,20 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
 /* ---------- POSTERS ---------- */
 const PostersSection: React.FC = () => (
   <SectionWrapper title="Posters and Seminars">
-    <p className="text-center text-gray-600">
-      Information about poster submissions and guidelines will be available soon.
-    </p>
+    <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-4">
+      <p>
+        Participants are encouraged to present their research results during the poster session.
+        Poster abstracts (one page in PDF format) should be submitted by <strong>February 28, 2026</strong>,
+        via email to <strong>Incoronata Notarangelo</strong> (incoronata.notarangelo[at]unito[dot]it)
+        and <strong>Alvise Sommariva</strong> (alvise[at]math[dot]unipd[dot]it).
+      </p>
+      <p>
+        <strong>Notification of acceptance</strong> will be sent by <strong>March 15, 2026</strong>.
+      </p>
+    </div>
   </SectionWrapper>
 );
+
 
 /* ---------- LECTURERS ---------- */
 const LecturersSection: React.FC = () => (
