@@ -307,10 +307,12 @@ const AboutSection: React.FC = () => (
 
       {/* Poster session (nuevo bloque) */}
       <p className="font-semibold mt-8">Poster session</p>
-      <p>
-        <strong>Incoronata Notarangelo</strong> (University of Turin, Italy) and{" "}
-        <strong>Alvise Sommariva</strong> (University of Padua, Italy)
-      </p>
+      <ul className="list-disc list-outside ml-2 space-y-2">
+        <li>
+            <strong>Incoronata Notarangelo</strong> (University of Turin, Italy) and{" "}
+            <strong>Alvise Sommariva</strong> (University of Padua, Italy)
+        </li>
+      </ul>
     </div>
   </SectionWrapper>
 );
