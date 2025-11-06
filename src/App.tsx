@@ -254,6 +254,7 @@ const AboutSection: React.FC = () => (
         <strong>hands-on software development activities</strong>, with a particular focus
         on <strong>PhD students</strong>, <strong>postdoctoral fellows</strong>, and{" "}
         <strong>early-career researchers</strong>.
+        <strong>A certificate of attendance and number of 4 ECTS will be assigned</strong>.
       </p>
 
       {/* Confirmed Lecturers */}
