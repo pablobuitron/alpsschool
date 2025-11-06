@@ -479,7 +479,7 @@ const RegistrationSection: React.FC = () => (
   <SectionWrapper title="Registration">
     <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-6">
       <p>
-        All the activities of AASM 2026 will be held at the VILLAGGIO OLIMPICO BARDONECCHIA. 
+        All the activities of <strong>AASM 2026</strong> will be held at the <strong>VILLAGGIO OLIMPICO BARDONECCHIA.</strong> 
       </p>
 
       <ul className="list-none space-y-2">
