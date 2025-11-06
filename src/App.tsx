@@ -521,13 +521,9 @@ const RegistrationSection: React.FC = () => (
         <strong>Alps Approximation School and Meeting (AASM 2026)</strong>.
       </p>
       
-      <p>
-        <strong>AASM 2026 REGISTRATION</strong>
-      </p>
 
       <p>
-        Registration consists in filling out the form HERE by <u><strong>MARCH 15, 2026</strong></u> with the payment of one of the available
-        <strong>"AASM 2026 PACKAGES"</strong> include accommodation, coffee breaks, meals (breakfast, lunch and dinner)*, registration fee, school and meeting kit, social dinner, welcome drink (* from the dinner of the first day till the lunch of the last day)
+        <strong>AASM 2026 PACKAGES</strong> include accommodation, coffee breaks, meals (breakfast, lunch and dinner)*, registration fee, school and meeting kit, social dinner, welcome drink (* from the dinner of the first day till the lunch of the last day)
       </p>
 
       <p>
