@@ -49,6 +49,7 @@ function App() {
     'Posters and Seminars',
     'Program',
     'Registration',
+    'Important Dates',
     'Venue',
   ];
 
@@ -84,6 +85,8 @@ function App() {
         return <ProgramSection />;
       case 'registration':
         return <RegistrationSection />;
+      case 'important-dates':
+        return <ImportantDatesSection />;
       case 'venue':
         return <VenueSection />;
       default:
@@ -573,6 +576,16 @@ const RegistrationSection: React.FC = () => (
     </div>
   </SectionWrapper>
 );
+
+/* ---------- IMPORTANT DATES ---------- */
+const ImportantDatesSection: React.FC = () => (
+  <SectionWrapper title="Important Dates">
+    <p className="text-center text-gray-600">
+      Important dates will be announced soon.
+    </p>
+  </SectionWrapper>
+);
+
 
 
 const VenueSection: React.FC = () => (
