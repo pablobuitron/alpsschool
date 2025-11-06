@@ -255,7 +255,7 @@ const AboutSection: React.FC = () => (
         on <strong>PhD students</strong>, <strong>postdoctoral fellows</strong>, and{" "}
         <strong>early-career researchers</strong>.
       </p>
-      
+
       <p>
         <strong>A certificate of attendance and number of 4 ECTS will be assigned</strong>.
       </p>
@@ -478,6 +478,10 @@ const ProgramSection: React.FC = () => (
 const RegistrationSection: React.FC = () => (
   <SectionWrapper title="Registration">
     <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-6">
+      <p>
+        All the activities of AASM 2026 will be held at the VILLAGGIO OLIMPICO BARDONECCHIA. 
+      </p>
+
       <ul className="list-none space-y-2">
         <li>
           <strong>Dates:</strong> June 1st – July 5th, 2026
@@ -486,7 +490,7 @@ const RegistrationSection: React.FC = () => (
           <strong>Mode of Study:</strong> on campus
         </li>
         <li>
-          <strong>Application deadline:</strong> March 31st, 2026
+          <strong>Application deadline:</strong> March 15th, 2026
         </li>
       </ul>
 
@@ -504,7 +508,7 @@ const RegistrationSection: React.FC = () => (
       </p>
 
       <p>
-        Please be informed that as of <strong>March 31st, 2026</strong>, those who have
+        Please be informed that as of <strong>March 15th, 2026</strong>, those who have
         filled out the application form will be contacted via email by{" "}
         <strong>Dr. Tiziana Giovannelli</strong> (
         <a
@@ -516,6 +520,55 @@ const RegistrationSection: React.FC = () => (
         ), who will send you a link to complete the final registration and payment for the{" "}
         <strong>Alps Approximation School and Meeting (AASM 2026)</strong>.
       </p>
+
+      <p>
+        <strong>AASM 2026 PACKAGES</strong> include accommodation, coffee breaks, meals (breakfast, lunch and dinner)*, registration fee, school and meeting kit, social dinner, welcome drink (* from the dinner of the first day till the lunch of the last day)
+      </p>
+
+      <p>
+        <strong>AASM 2026 PACKAGES</strong>
+      </p>
+
+      <p>
+        <u><strong>Packages with Reduced Rates</strong> (applied to WG organizers, PhD students, post-docs)</u>
+      </p>  
+      
+      <ul className="list-none space-y-2">
+        <li>
+          [P1] 4 NIGHTS (1-5 June) in SHARED room - 500 Eur
+        </li>
+        <li>
+          [P2] 5 NIGHTS (1-6 June) in SHARED room - 600 Eur
+        </li>
+        <li>
+          [P3] 4 NIGHTS (1-5 June) in SINGLE room - 650 Eur
+        </li>
+        <li>
+          [P4] 5 NIGHTS (1-6 June) in SINGLE  room - 750 Eur
+        </li>
+      </ul>
+
+       <p>
+        <u><strong>Packages with Regular Rates</strong> (applied to all other participants, not eligible for a reduced rate)</u>
+      </p>  
+      
+      <ul className="list-none space-y-2">
+        <li>
+          [P5] 4 NIGHTS (1-5 June) in SHARED room - 600 Eur
+        </li>
+        <li>
+          [P6] 5 NIGHTS (1-6 June) in SHARED room - 700 Eur
+        </li>
+        <li>
+          [P7] 4 NIGHTS (1-5 June) in SINGLE room - 750 Eur
+        </li>
+        <li>
+          [P8] 5 NIGHTS (1-6 June) in SINGLE  room - 850 Eur
+        </li>
+      </ul>
+
+
+
     </div>
   </SectionWrapper>
 );
