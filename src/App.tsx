@@ -469,13 +469,53 @@ const ProgramSection: React.FC = () => (
   </SectionWrapper>
 );
 
+
+/*--------REGISTRATION------ */
 const RegistrationSection: React.FC = () => (
   <SectionWrapper title="Registration">
-    <p className="text-center text-gray-600">
-      Registration details will be available in upcoming updates.
-    </p>
+    <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-6">
+      <ul className="list-none space-y-2">
+        <li>
+          <strong>Dates:</strong> June 1st – July 5th, 2026
+        </li>
+        <li>
+          <strong>Mode of Study:</strong> on campus
+        </li>
+        <li>
+          <strong>Application deadline:</strong> March 31st, 2026
+        </li>
+      </ul>
+
+      <p>
+        You can register{" "}
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScbcc7g6VgkQ2ntFqlQ6NZVAJJplLAVgj4on-L3CVabdcu24g/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 underline hover:text-blue-900"
+        >
+          here
+        </a>
+        .
+      </p>
+
+      <p>
+        Please be informed that as of <strong>March 31st, 2026</strong>, those who have
+        filled out the application form will be contacted via email by{" "}
+        <strong>Dr. Tiziana Giovannelli</strong> (
+        <a
+          href="mailto:tiziana.giovannelli@uninettunouniversity.net"
+          className="text-blue-700 underline hover:text-blue-900"
+        >
+          tiziana.giovannelli@uninettunouniversity.net
+        </a>
+        ), who will send you a link to complete the final registration and payment for the{" "}
+        <strong>Alps Approximation School and Meeting (AASM 2026)</strong>.
+      </p>
+    </div>
   </SectionWrapper>
 );
+
 
 const VenueSection: React.FC = () => (
   <SectionWrapper title="Venue">
