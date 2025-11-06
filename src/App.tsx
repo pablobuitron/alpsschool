@@ -255,6 +255,7 @@ const AboutSection: React.FC = () => (
         on <strong>PhD students</strong>, <strong>postdoctoral fellows</strong>, and{" "}
         <strong>early-career researchers</strong>.
       </p>
+      
       <p>
         <strong>A certificate of attendance and number of 4 ECTS will be assigned</strong>.
       </p>
