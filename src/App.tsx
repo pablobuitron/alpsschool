@@ -282,9 +282,14 @@ const AboutSection: React.FC = () => (
       {/* Working Groups */}
       <p className="font-semibold mt-8">Working Groups</p>
 
-      <p>
-        Working Groups are designed to foster in-depth discussion and collaboration on specific research topics. They offer participants the opportunity to exchange ideas, develop joint projects, and explore emerging issues in their field. Results of the participants’ research may also be presented during the poster session. The following Working Groups will be organized:
-      </p>
+      <div className="space-y-4">
+        <p>
+          Working Groups are designed to foster in-depth discussion and collaboration
+          on specific research topics. They offer participants the opportunity to
+          exchange ideas, develop joint projects, and explore emerging issues in
+          their field. Results of the participants’ research may also be presented
+          during the poster session. The following Working Groups will be organized:
+        </p>
 
       <ul className="list-disc list-outside ml-6 space-y-2">
         <li>
@@ -726,8 +731,8 @@ const VenueSection: React.FC = () => (
               className="text-blue-700 underline hover:text-blue-900"
             >
               Milano Bergamo Airport
-            </a>
-              you should get by bus to the Milano Centrale railway station (timetables and
+            </a>{" "}
+            you should get by bus to the Milano Centrale railway station (timetables and
             tickets available{" "}
             <a
               href="https://www.airportbusexpress.it/?lang=en-GB"
