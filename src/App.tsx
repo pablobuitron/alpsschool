@@ -282,15 +282,6 @@ const AboutSection: React.FC = () => (
       {/* Working Groups */}
       <p className="font-semibold mt-8">Working Groups</p>
 
-      <div className="space-y-4">
-        <p>
-          Working Groups are designed to foster in-depth discussion and collaboration
-          on specific research topics. They offer participants the opportunity to
-          exchange ideas, develop joint projects, and explore emerging issues in
-          their field. Results of the participants’ research may also be presented
-          during the poster session. The following Working Groups will be organized:
-        </p>
-
       <ul className="list-disc list-outside ml-6 space-y-2">
         <li>
           <strong>Luisa Fermo</strong> and <strong>Giuseppe Rodriguez</strong> (University
@@ -321,7 +312,6 @@ const AboutSection: React.FC = () => (
           describing and analyzing special polynomials
         </li>
       </ul>
-      </div>
 
       {/* Poster session (nuevo bloque) */}
       <p className="font-semibold mt-8">Poster session</p>
@@ -421,6 +411,15 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
   return (
     <SectionWrapper title="Working Groups">
       <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
+        {/* Párrafo introductorio arriba de la lista */}
+        <p>
+          Working Groups are designed to foster in-depth discussion and collaboration
+          on specific research topics. They offer participants the opportunity to
+          exchange ideas, develop joint projects, and explore emerging issues in
+          their field. Results of the participants’ research may also be presented
+          during the poster session. The following Working Groups will be organized:
+        </p>
+
         <ol className="list-decimal list-inside space-y-4">
           {normalizedGroups.map((g, i) => (
             <li key={i}>
@@ -438,6 +437,7 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
     </SectionWrapper>
   );
 };
+
 
 /* ---------- POSTERS ---------- */
 const PostersSection: React.FC = () => (
