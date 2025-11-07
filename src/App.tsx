@@ -321,6 +321,7 @@ const AboutSection: React.FC = () => (
           describing and analyzing special polynomials
         </li>
       </ul>
+      </div>
 
       {/* Poster session (nuevo bloque) */}
       <p className="font-semibold mt-8">Poster session</p>
