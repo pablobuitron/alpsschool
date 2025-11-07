@@ -281,9 +281,11 @@ const AboutSection: React.FC = () => (
 
       {/* Working Groups */}
       <p className="font-semibold mt-8">Working Groups</p>
+
       <p>
         Working Groups are designed to foster in-depth discussion and collaboration on specific research topics. They offer participants the opportunity to exchange ideas, develop joint projects, and explore emerging issues in their field. Results of the participants’ research may also be presented during the poster session. The following Working Groups will be organized:
       </p>
+      
       <ul className="list-disc list-outside ml-6 space-y-2">
         <li>
           <strong>Luisa Fermo</strong> and <strong>Giuseppe Rodriguez</strong> (University
