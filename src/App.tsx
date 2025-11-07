@@ -25,8 +25,8 @@ function App() {
 
   const scientificCommittee: Member[] = [
     { name: 'Praveen Agarwal', affiliation: 'ANAND ICE College, Jaipur, India' },
-    { name: 'Clemente Cesarano', affiliation: 'Uninettuno University' },
     { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
+    { name: 'Clemente Cesarano', affiliation: 'Uninettuno University' },
     { name: "Francesco Dell'Accio", affiliation: 'University of Calabria, Italy' },
     { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
     { name: 'Luisa Fermo', affiliation: 'University of Cagliari, Italy' },
@@ -285,7 +285,7 @@ const AboutSection: React.FC = () => (
       <p>
         Working Groups are designed to foster in-depth discussion and collaboration on specific research topics. They offer participants the opportunity to exchange ideas, develop joint projects, and explore emerging issues in their field. Results of the participants’ research may also be presented during the poster session. The following Working Groups will be organized:
       </p>
-      
+
       <ul className="list-disc list-outside ml-6 space-y-2">
         <li>
           <strong>Luisa Fermo</strong> and <strong>Giuseppe Rodriguez</strong> (University
@@ -492,7 +492,7 @@ const RegistrationSection: React.FC = () => (
 
       <ul className="list-none space-y-2">
         <li>
-          <strong>Dates:</strong> June 1st – July 5th, 2026
+          <strong>Dates:</strong> June 1st – June 5th, 2026
         </li>
         <li>
           <strong>Mode of Study:</strong> on campus
@@ -727,7 +727,7 @@ const VenueSection: React.FC = () => (
             >
               Milano Bergamo Airport
             </a>
-             you should get by bus to the Milano Centrale railway station (timetables and
+              you should get by bus to the Milano Centrale railway station (timetables and
             tickets available{" "}
             <a
               href="https://www.airportbusexpress.it/?lang=en-GB"
