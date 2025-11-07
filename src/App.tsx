@@ -417,7 +417,7 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
           on specific research topics. They offer participants the opportunity to
           exchange ideas, develop joint projects, and explore emerging issues in
           their field. Results of the participants’ research may also be presented
-          during the poster session. The following Working Groups will be organized:
+          during the poster session. The following Working Groups will be organized: 
         </p>
 
         <ol className="list-decimal list-inside space-y-4">
