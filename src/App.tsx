@@ -281,6 +281,9 @@ const AboutSection: React.FC = () => (
 
       {/* Working Groups */}
       <p className="font-semibold mt-8">Working Groups</p>
+      <p>
+        Working Groups are designed to foster in-depth discussion and collaboration on specific research topics. They offer participants the opportunity to exchange ideas, develop joint projects, and explore emerging issues in their field. Results of the participants’ research may also be presented during the poster session. The following Working Groups will be organized:
+      </p>
       <ul className="list-disc list-outside ml-6 space-y-2">
         <li>
           <strong>Luisa Fermo</strong> and <strong>Giuseppe Rodriguez</strong> (University
@@ -580,9 +583,23 @@ const RegistrationSection: React.FC = () => (
 /* ---------- IMPORTANT DATES ---------- */
 const ImportantDatesSection: React.FC = () => (
   <SectionWrapper title="Important Dates">
-    <p className="text-center text-gray-600">
-      Important dates will be announced soon.
-    </p>
+    <ul className="list-none space-y-2">
+        <li>
+          <strong>February 15, 2026:</strong> Deadline to contact the Working Group organizers to be included in a Working Group
+        </li>
+        <li>
+          <strong>February 28, 2026:</strong> Poster abstract submission deadline
+        </li>
+        <li>
+          <strong>February 28, 2026:</strong> Working Group participant list due (to be provided by WG organizers)
+        </li>
+        <li>
+          <strong>March 15, 2026:</strong> Registration deadline
+        </li>
+        <li>
+          <strong>March 31, 2026:</strong> Payment deadline
+        </li>
+      </ul>
   </SectionWrapper>
 );
 
