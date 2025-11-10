@@ -222,7 +222,7 @@ const HomeSection: React.FC = () => (
           <img
             src="./padovalogo.jpeg"
             alt="University of Padua"
-            className="h-28 object-contain bg-white p-2 rounded-lg"
+            className="h-27 object-contain bg-white p-2 rounded-lg"
           />
         </div>
       </div>
