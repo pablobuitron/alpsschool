@@ -214,7 +214,7 @@ const HomeSection: React.FC = () => (
             <img
               src="./uninetlogo.png"
               alt="Uninettuno University"
-              className="h-29.5 object-contain bg-white p-2 rounded-lg"
+              className="h-30 object-contain bg-white p-2 rounded-lg"
             />
           </div>
         </div>
