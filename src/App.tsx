@@ -207,7 +207,7 @@ const HomeSection: React.FC = () => (
             <img
               src="./torinologo.png"
               alt="University of Turin"
-              className="h-40.5 object-contain bg-white p-2 rounded-lg"
+              className="h-40,5 object-contain bg-white p-2 rounded-lg"
             />
           </div>
           <div className="flex justify-center items-center">
@@ -222,7 +222,7 @@ const HomeSection: React.FC = () => (
           <img
             src="./padovalogo.jpeg"
             alt="University of Padua"
-            className="h-28.5 object-contain bg-white p-2 rounded-lg"
+            className="h-28,5 object-contain bg-white p-2 rounded-lg"
           />
         </div>
       </div>
