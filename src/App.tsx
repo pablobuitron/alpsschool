@@ -45,8 +45,9 @@ function App() {
     'About',
     'Committees',
     'Lecturers',
+    'Seminars',
     'Working Groups',
-    'Posters and Seminars',
+    'Posters',
     'Program',
     'Registration',
     'Important Dates',
@@ -77,9 +78,11 @@ function App() {
         );
       case 'lecturers':
         return <LecturersSection />;
+        case 'seminars':
+        return <SeminarsSection />;
       case 'working-groups':
         return <WorkingGroupsSection scientificCommittee={scientificCommittee} />;
-      case 'posters-and-seminars':
+      case 'posters':
         return <PostersSection />;
       case 'program':
         return <ProgramSection />;
@@ -263,6 +266,10 @@ const AboutSection: React.FC = () => (
         <strong>A certificate of attendance and number of 4 ECTS will be assigned</strong>.
       </p>
 
+      <p>
+        The maximum number of participants will be limited to 50.
+      </p>
+
       {/* Confirmed Lecturers */}
       <p className="font-semibold mt-8">Confirmed Lecturers</p>
       <ul className="list-disc list-outside ml-6 space-y-2">
@@ -441,7 +448,7 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
 
 /* ---------- POSTERS ---------- */
 const PostersSection: React.FC = () => (
-  <SectionWrapper title="Posters and Seminars">
+  <SectionWrapper title="Posters">
     <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-4">
       <p>
         Participants are encouraged to present their research results during the poster session.
@@ -475,6 +482,15 @@ const LecturersSection: React.FC = () => (
         <p>“Computational Approximation with Chebfun.”</p>
       </div>
     </div>
+  </SectionWrapper>
+);
+
+/* ---------- SEMINARS ---------- */
+const SeminarsSection: React.FC = () => (
+  <SectionWrapper title="Seminars">
+    <p className="text-center text-gray-600">
+      Seminars will be announced soon.
+    </p>
   </SectionWrapper>
 );
 
