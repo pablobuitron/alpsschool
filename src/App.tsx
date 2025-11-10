@@ -269,65 +269,6 @@ const AboutSection: React.FC = () => (
       <p>
         <strong>The maximum number of participants will be limited to 50.</strong>
       </p>
-
-      {/* Confirmed Lecturers */}
-      <p className="font-semibold mt-8">Confirmed Lecturers</p>
-      <ul className="list-disc list-outside ml-6 space-y-2">
-        <li>
-          <strong>Teresa Pérez</strong> (University of Granada, Spain):{" "}
-          <em>
-            “Orthogonal Polynomials in Several Variables: From Hermite to Zernike and
-            Beyond. Applications in Optics.”
-          </em>
-        </li>
-        <li>
-          <strong>Nick Hale</strong> (Stellenbosch University, South Africa):{" "}
-          <em>“Computational Approximation with Chebfun.”</em>
-        </li>
-      </ul>
-
-      {/* Working Groups */}
-      <p className="font-semibold mt-8">Working Groups</p>
-
-      <ul className="list-disc list-outside ml-6 space-y-2">
-        <li>
-          <strong>Luisa Fermo</strong> and <strong>Giuseppe Rodriguez</strong> (University
-          of Cagliari, Italy): Numerical integration and applications to integral equations
-        </li>
-        <li>
-          <strong>Francisco Marcellán</strong> (University Carlos III Madrid, Spain) and{" "}
-          <strong>Nicola Mastronardi</strong> (IAC – CNR, Italy): Sobolev orthogonal
-          polynomials: theoretical and computational aspects
-        </li>
-        <li>
-          <strong>Francesco Dell’Accio</strong> (University of Calabria, Italy):
-          Approximation by algebraic functions: from one to several variables, with
-          applications
-        </li>
-        <li>
-          <strong>Donatella Occorsio</strong> and <strong>Maria Grazia Russo</strong>{" "}
-          (University of Basilicata, Italy): Approximation methods for functional equations
-        </li>
-        <li>
-          <strong>Roberto Cavoretto</strong> (University of Turin, Italy) and{" "}
-          <strong>Amir Noorizadegan</strong> (Hong Kong Baptist University): Meshless
-          methods and scientific machine learning
-        </li>
-        <li>
-          <strong>Praveen Agarwal</strong> (ANAND ICE College, Jaipur, India) and{" "}
-          <strong>Clemente Cesarano</strong> (Uninettunno University): Operator theory in
-          describing and analyzing special polynomials
-        </li>
-      </ul>
-
-      {/* Poster session (nuevo bloque) */}
-      <p className="font-semibold mt-8">Poster session</p>
-      <ul className="list-disc list-outside ml-6 space-y-2">
-        <li>
-            <strong>Incoronata Notarangelo</strong> (University of Turin, Italy) and{" "}
-            <strong>Alvise Sommariva</strong> (University of Padua, Italy)
-        </li>
-      </ul>
     </div>
   </SectionWrapper>
 );
