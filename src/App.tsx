@@ -267,7 +267,7 @@ const AboutSection: React.FC = () => (
       </p>
 
       <p>
-        The maximum number of participants will be limited to 50.
+        <strong>The maximum number of participants will be limited to 50.</strong>
       </p>
 
       {/* Confirmed Lecturers */}
