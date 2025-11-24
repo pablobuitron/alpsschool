@@ -274,11 +274,11 @@ const AboutSection: React.FC = () => (
       </div>
 
       {/* ---------- LOGO AL FONDO ---------- */}
-      <div className="not-prose flex justify-center items-end mt-20 mb-8">
+      <div className="not-prose flex justify-center items-end mt-26 mb-8">
         <img
           src="./sponsor.jpeg"
           alt="Sponsor"
-          className="h-[150px] object-contain bg-white p-3 rounded-xl shadow-sm"
+          className="h-[160px] object-contain bg-white p-3 rounded-xl shadow-sm"
         />
       </div>
     </div>
