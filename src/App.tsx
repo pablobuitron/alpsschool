@@ -279,7 +279,7 @@ const AboutSection: React.FC = () => (
           src="./sponsor.jpeg"
           alt="Sponsor"
           className="h-[150px] object-contain bg-white p-3 rounded-xl shadow-sm"
-          style={{ bottom: "200px", position: "absolute" }}
+          style={{ bottom: "20px", position: "absolute" }}
         />
       </div>
     </div>
