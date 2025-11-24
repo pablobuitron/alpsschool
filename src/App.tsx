@@ -233,7 +233,7 @@ const HomeSection: React.FC = () => (
 /* ---------- ABOUT ---------- */
 const AboutSection: React.FC = () => (
   <SectionWrapper title="About AASM 2026">
-    <div className="relative min-h-screen flex flex-col justify-between">
+    <div className="relative min-h-screen">
       {/* ---------- TEXTO ---------- */}
       <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-4 mt-8">
         <p>
@@ -273,12 +273,13 @@ const AboutSection: React.FC = () => (
         </p>
       </div>
 
-      {/* ---------- LOGO AL FONDO ---------- */}
-      <div className="not-prose flex justify-center items-end mt-10 mb-8">
+      {/* ---------- LOGO CON CONTROL TOTAL ---------- */}
+      <div className="absolute left-0 right-0 flex justify-center">
         <img
           src="./sponsor.jpeg"
           alt="Sponsor"
-          className="h-[180px] object-contain bg-white p-3 rounded-xl shadow-sm"
+          className="h-[150px] object-contain bg-white p-3 rounded-xl shadow-sm"
+          style={{ bottom: "200px", position: "absolute" }}
         />
       </div>
     </div>
