@@ -233,48 +233,45 @@ const HomeSection: React.FC = () => (
 /* ---------- ABOUT ---------- */
 const AboutSection: React.FC = () => (
   <SectionWrapper title="About AASM 2026">
-    <div className="relative min-h-screen flex flex-col justify-between">
-      {/* ---------- TEXTO ---------- */}
-      <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-4 mt-8">
-        <p>
-          The <strong>Alps Approximation School and Meeting (AASM 2026)</strong> will be held
-          in <strong>Bardonecchia (TO), Italy</strong>, from <strong>June 1 to 5, 2026</strong>.
-        </p>
+    <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-4">
+      <p>
+        The <strong>Alps Approximation School and Meeting (AASM 2026)</strong> will be held
+        in <strong>Bardonecchia (TO), Italy</strong>, from <strong>June 1 to 5, 2026</strong>.
+      </p>
 
-        <p>
-          This international event combines a <strong>Summer School</strong> and a{" "}
-          <strong>Scientific Meeting</strong> devoted to{" "}
-          <strong>Approximation Theory</strong>, bringing together mathematicians,
-          researchers, and students interested in both fundamental advances and applied
-          perspectives.
-        </p>
+      <p>
+        This international event combines a <strong>Summer School</strong> and a{" "}
+        <strong>Scientific Meeting</strong> devoted to{" "}
+        <strong>Approximation Theory</strong>, bringing together mathematicians,
+        researchers, and students interested in both fundamental advances and applied
+        perspectives.
+      </p>
 
-        <p>
-          The program will explore <strong>theoretical frameworks</strong>,{" "}
-          <strong>computational methods</strong>, and{" "}
-          <strong>applications</strong> of approximation techniques to problems arising in{" "}
-          <strong>industrial and applied sciences</strong>.
-        </p>
+      <p>
+        The program will explore <strong>theoretical frameworks</strong>,{" "}
+        <strong>computational methods</strong>, and{" "}
+        <strong>applications</strong> of approximation techniques to problems arising in{" "}
+        <strong>industrial and applied sciences</strong>.
+      </p>
 
-        <p>
-          The School will feature <strong>lectures by leading experts</strong>,{" "}
-          <strong>collaborative working sessions</strong>, and{" "}
-          <strong>hands-on software development activities</strong>, with a particular focus
-          on <strong>PhD students</strong>, <strong>postdoctoral fellows</strong>, and{" "}
-          <strong>early-career researchers</strong>.
-        </p>
+      <p>
+        The School will feature <strong>lectures by leading experts</strong>,{" "}
+        <strong>collaborative working sessions</strong>, and{" "}
+        <strong>hands-on software development activities</strong>, with a particular focus
+        on <strong>PhD students</strong>, <strong>postdoctoral fellows</strong>, and{" "}
+        <strong>early-career researchers</strong>.
+      </p>
 
-        <p>
-          <strong>A certificate of attendance and number of 4 ECTS will be assigned.</strong>
-        </p>
+      <p>
+        <strong>A certificate of attendance and number of 4 ECTS will be assigned.</strong>
+      </p>
 
-        <p>
-          <strong>The maximum number of participants will be limited to 50.</strong>
-        </p>
-      </div>
+      <p>
+        <strong>The maximum number of participants will be limited to 50.</strong>
+      </p>
 
-      {/* ---------- LOGO AL FONDO ---------- */}
-      <div className="not-prose flex justify-center items-end mt-[-20px] mb-8">
+      {/* ---- LOGO DOS LÍNEAS DEBAJO ---- */}
+      <div className="flex justify-center mt-6">
         <img
           src="./sponsor.jpeg"
           alt="Sponsor"
@@ -284,6 +281,7 @@ const AboutSection: React.FC = () => (
     </div>
   </SectionWrapper>
 );
+
 
 
 
