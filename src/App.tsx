@@ -274,7 +274,7 @@ const AboutSection: React.FC = () => (
             <img
               src="./sponsor.jpeg"
               alt="Sponsor"
-              className="h-20 object-contain bg-white p-2 rounded-lg"
+              className="h-25 object-contain bg-white p-2 rounded-lg"
             />
           </div>
 
