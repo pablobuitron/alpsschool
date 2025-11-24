@@ -274,7 +274,7 @@ const AboutSection: React.FC = () => (
       </div>
 
       {/* ---------- LOGO AL FONDO ---------- */}
-      <div className="not-prose flex justify-center items-end mt-20 mb-8">
+      <div className="not-prose flex justify-center items-end mt-10 mb-8">
         <img
           src="./sponsor.jpeg"
           alt="Sponsor"
