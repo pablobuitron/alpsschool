@@ -269,6 +269,15 @@ const AboutSection: React.FC = () => (
       <p>
         <strong>The maximum number of participants will be limited to 50.</strong>
       </p>
+
+      <div className="flex justify-center items-center">
+            <img
+              src="./sponsor.jpeg"
+              alt="Sponsor"
+              className="h-30 object-contain bg-white p-2 rounded-lg"
+            />
+          </div>
+
     </div>
   </SectionWrapper>
 );
