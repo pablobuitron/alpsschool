@@ -278,7 +278,7 @@ const AboutSection: React.FC = () => (
         <img
           src="./sponsor.jpeg"
           alt="Sponsor"
-          className="h-[160px] object-contain bg-white p-3 rounded-xl shadow-sm"
+          className="h-[180px] object-contain bg-white p-3 rounded-xl shadow-sm"
         />
       </div>
     </div>
