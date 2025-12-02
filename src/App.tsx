@@ -204,14 +204,14 @@ const HomeSection: React.FC = () => (
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     {/* GRID 2x2 */}
-    <div className="grid grid-cols-2 gap-10 max-w-3xl mx-auto items-center justify-items-center">
+    <div className="grid grid-cols-2 gap-12 max-w-4xl mx-auto items-center justify-items-center">
 
       {/* Torino */}
       <div className="flex justify-center items-center">
         <img
           src="./torinologo.png"
           alt="University of Turin"
-          className="h-32 object-contain bg-white p-2 rounded-lg"
+          className="h-40 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
@@ -220,7 +220,7 @@ const HomeSection: React.FC = () => (
         <img
           src="./uninetlogo.png"
           alt="Uninettuno University"
-          className="h-28 object-contain bg-white p-2 rounded-lg"
+          className="h-36 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
@@ -229,22 +229,23 @@ const HomeSection: React.FC = () => (
         <img
           src="./padovalogo.jpeg"
           alt="University of Padua"
-          className="h-28 object-contain bg-white p-2 rounded-lg"
+          className="h-36 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
-      {/* Simai Sponsor (más pequeño) */}
+      {/* Simai Sponsor */}
       <div className="flex justify-center items-center">
         <img
           src="./sponsor.jpeg"
           alt="Simai sponsor"
-          className="h-24 object-contain bg-white p-2 rounded-lg"
+          className="h-32 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
     </div>
   </div>
 </section>
+
 
   </>
 );
@@ -294,6 +295,13 @@ const AboutSection: React.FC = () => (
         <img
           src="./sponsor.jpeg"
           alt="Sponsor"
+          className="h-[180px] object-contain bg-white p-3 rounded-xl shadow-sm"
+        />
+      </div>
+      <div className="flex justify-center mt-6">
+        <img
+          src="./indam.jpeg"
+          alt="indam"
           className="h-[180px] object-contain bg-white p-3 rounded-xl shadow-sm"
         />
       </div>
