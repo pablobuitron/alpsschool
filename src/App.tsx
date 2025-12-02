@@ -225,6 +225,13 @@ const HomeSection: React.FC = () => (
             className="h-27 object-contain bg-white p-2 rounded-lg"
           />
         </div>
+        <div className="flex justify-center items-center mt-12">
+          <img
+            src="./sponsor.jpeg"
+            alt="Simai sponsor"
+            className="h-27 object-contain bg-white p-2 rounded-lg"
+          />
+        </div>
       </div>
     </section>
   </>
