@@ -211,7 +211,7 @@ const HomeSection: React.FC = () => (
         <img
           src="./torinologo.png"
           alt="University of Turin"
-          className="h-42 object-contain bg-white p-3 rounded-lg"
+          className="h-41 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
@@ -220,7 +220,7 @@ const HomeSection: React.FC = () => (
         <img
           src="./uninetlogo.png"
           alt="Uninettuno University"
-          className="h-34 object-contain bg-white p-3 rounded-lg"
+          className="h-33 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
@@ -229,7 +229,7 @@ const HomeSection: React.FC = () => (
         <img
           src="./padovalogo.jpeg"
           alt="University of Padua"
-          className="h-34 object-contain bg-white p-3 rounded-lg"
+          className="h-33 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
@@ -238,7 +238,7 @@ const HomeSection: React.FC = () => (
         <img
           src="./sponsor.jpeg"
           alt="Simai sponsor"
-          className="h-34 object-contain bg-white p-3 rounded-lg"
+          className="h-33 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
@@ -289,20 +289,20 @@ const AboutSection: React.FC = () => (
       </p>
 
       {/* ---- LOGO DOS LÍNEAS DEBAJO ---- */}
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center items-center gap-10 mt-6">
         <img
           src="./sponsor.jpeg"
           alt="Sponsor"
           className="h-[180px] object-contain bg-white p-3 rounded-xl shadow-sm"
         />
-      </div>
-      <div className="flex justify-center mt-6">
+
         <img
           src="./indam.jpeg"
-          alt="indam"
+          alt="INDAM"
           className="h-[180px] object-contain bg-white p-3 rounded-xl shadow-sm"
         />
       </div>
+
     </div>
   </SectionWrapper>
 );
