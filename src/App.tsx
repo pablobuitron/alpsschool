@@ -200,40 +200,52 @@ const HomeSection: React.FC = () => (
       </div>
     </section>
 
-    <section className="relative z-10 bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto items-center justify-items-center">
-          <div className="flex justify-center items-center">
-            <img
-              src="./torinologo.png"
-              alt="University of Turin"
-              className="h-42 object-contain bg-white p-2 rounded-lg"
-            />
-          </div>
-          <div className="flex justify-center items-center">
-            <img
-              src="./uninetlogo.png"
-              alt="Uninettuno University"
-              className="h-30 object-contain bg-white p-2 rounded-lg"
-            />
-          </div>
-        </div>
-        <div className="flex justify-center items-center mt-12">
-          <img
-            src="./padovalogo.jpeg"
-            alt="University of Padua"
-            className="h-27 object-contain bg-white p-2 rounded-lg"
-          />
-        </div>
-        <div className="flex justify-center items-center mt-12">
-          <img
-            src="./sponsor.jpeg"
-            alt="Simai sponsor"
-            className="h-27 object-contain bg-white p-2 rounded-lg"
-          />
-        </div>
+<section className="relative z-10 bg-gray-50 py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    {/* GRID 2x2 */}
+    <div className="grid grid-cols-2 gap-10 max-w-3xl mx-auto items-center justify-items-center">
+
+      {/* Torino */}
+      <div className="flex justify-center items-center">
+        <img
+          src="./torinologo.png"
+          alt="University of Turin"
+          className="h-32 object-contain bg-white p-2 rounded-lg"
+        />
       </div>
-    </section>
+
+      {/* Uninettuno */}
+      <div className="flex justify-center items-center">
+        <img
+          src="./uninetlogo.png"
+          alt="Uninettuno University"
+          className="h-28 object-contain bg-white p-2 rounded-lg"
+        />
+      </div>
+
+      {/* Padova */}
+      <div className="flex justify-center items-center">
+        <img
+          src="./padovalogo.jpeg"
+          alt="University of Padua"
+          className="h-28 object-contain bg-white p-2 rounded-lg"
+        />
+      </div>
+
+      {/* Simai Sponsor (más pequeño) */}
+      <div className="flex justify-center items-center">
+        <img
+          src="./sponsor.jpeg"
+          alt="Simai sponsor"
+          className="h-24 object-contain bg-white p-2 rounded-lg"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
   </>
 );
 
