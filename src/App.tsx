@@ -211,7 +211,7 @@ const HomeSection: React.FC = () => (
         <img
           src="./torinologo.png"
           alt="University of Turin"
-          className="h-40 object-contain bg-white p-3 rounded-lg"
+          className="h-42 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
@@ -220,7 +220,7 @@ const HomeSection: React.FC = () => (
         <img
           src="./uninetlogo.png"
           alt="Uninettuno University"
-          className="h-36 object-contain bg-white p-3 rounded-lg"
+          className="h-34 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
@@ -229,7 +229,7 @@ const HomeSection: React.FC = () => (
         <img
           src="./padovalogo.jpeg"
           alt="University of Padua"
-          className="h-36 object-contain bg-white p-3 rounded-lg"
+          className="h-34 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
@@ -238,15 +238,13 @@ const HomeSection: React.FC = () => (
         <img
           src="./sponsor.jpeg"
           alt="Simai sponsor"
-          className="h-32 object-contain bg-white p-3 rounded-lg"
+          className="h-34 object-contain bg-white p-3 rounded-lg"
         />
       </div>
 
     </div>
   </div>
 </section>
-
-
   </>
 );
 
