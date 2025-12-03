@@ -587,10 +587,10 @@ const ProgramSection: React.FC = () => {
               {/* 14:15–15:45 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>14:15–15:45</td>
-                <td className="bg-white">WG</td>
-                <td className="bg-white">WG</td>
+                <td className={c.wg}>WG</td>
+                <td className={c.wg}>WG</td>
                 {/* (omitimos Wed por rowSpan) */}
-                <td className="bg-white">WG</td>
+                <td className={c.wg}>WG</td>
                 <td className={c.gray}></td>
               </tr>
 
@@ -607,10 +607,10 @@ const ProgramSection: React.FC = () => {
               {/* 16:15–17:15 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>16:15–17:15</td>
-                <td className="bg-white">Seminar-1</td>
+                <td className={c.s1}>Seminar-1</td>
                 <td className={c.poster + " font-semibold"}>Poster Session</td>
                 {/* (omitimos Wed por rowSpan) */}
-                <td className="bg-white">Seminar-2</td>
+                <td className={c.s2}>Seminar-2</td>
                 <td className={c.gray}></td>
               </tr>
 
@@ -650,7 +650,7 @@ const ProgramSection: React.FC = () => {
                 <td className={c.dinner}>Dinner</td>
                 <td className={c.dinner}>Dinner</td>
                 <td className={c.dinner}>Dinner</td>
-                <td className={c.dinner + " font-semibold"}>Social Dinner</td>
+                <td className={c.dinner}>Social Dinner</td>
                 <td className={c.gray}></td>
               </tr>
             </tbody>
