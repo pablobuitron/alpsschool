@@ -525,10 +525,10 @@ const ProgramSection: React.FC = () => {
               <tr>
                 <td className={`w-32 p-1 font-medium ${c.time}`}>09:00–10:30</td>
                 <td className={c.gray}></td>
-                <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
-                <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
-                <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
-                <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
+                <td className={c.mc1}>MC-1 (2h)</td>
+                <td className={c.mc2}>MC-2 (2h)</td>
+                <td className={c.mc1}>MC-1 (2h)</td>
+                <td className={c.mc2}>MC-2 (2h)</td>
               </tr>
 
               {/* 10:30–11:00 */}
@@ -545,10 +545,10 @@ const ProgramSection: React.FC = () => {
               <tr>
                 <td className={`p-1 ${c.time}`}>11:00–12:30</td>
                 <td className={c.gray}></td>
-                <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
-                <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
-                <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
-                <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
+                <td className={c.mc2}>MC-2 (2h)</td>
+                <td className={c.mc1}>MC-1 (2h)</td>
+                <td className={c.mc2}>MC-2 (2h)</td>
+                <td className={c.mc1}>MC-1 (2h)</td>
               </tr>
 
               {/* 12:30–12:45 */}
@@ -608,7 +608,7 @@ const ProgramSection: React.FC = () => {
               <tr>
                 <td className={`p-1 ${c.time}`}>16:15–17:15</td>
                 <td className={c.s1}>Seminar-1</td>
-                <td className={c.poster + " font-semibold"}>Poster Session</td>
+                <td className={c.poster  "}>Poster Session</td>
                 {/* (omitimos Wed por rowSpan) */}
                 <td className={c.s2}>Seminar-2</td>
                 <td className={c.gray}></td>
