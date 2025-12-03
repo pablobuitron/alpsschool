@@ -478,7 +478,7 @@ const SeminarsSection: React.FC = () => (
 
 /* ---------- PROGRAM ---------- */
 const ProgramSection: React.FC = () => {
-  // Colores aproximados al Excel
+  // Paleta (aprox. Excel + leyenda solicitada)
   const c = {
     head: "bg-amber-100",           // cabecera superior
     time: "bg-amber-50",            // columna de horas
@@ -486,7 +486,10 @@ const ProgramSection: React.FC = () => {
     coffee: "bg-white",             // coffee (borde visible)
     mc1: "bg-[#cfe5ff]",            // azul claro MC-1
     mc2: "bg-[#c8f27a]",            // verde MC-2
-    poster: "bg-[#f7e27d]",         // amarillo Poster Session
+    poster: "bg-orange-300",        // NUEVO: Posters naranja
+    wg: "bg-yellow-300",            // NUEVO: WG amarillo (leyenda)
+    s1: "bg-[#d8f3dc]",             // NUEVO: Seminar-1 verde pálido (leyenda)
+    s2: "bg-[#e6d4ff]",             // NUEVO: Seminar-2 violeta leve (leyenda)
     dinner: "bg-white",
   };
 
@@ -506,6 +509,7 @@ const ProgramSection: React.FC = () => {
                 <th className={`p-2 font-semibold ${c.head}`}>Fri 5/6</th>
               </tr>
             </thead>
+
             <tbody className="[&>tr>td]:border [&>tr>td]:border-gray-300 text-center align-middle">
               {/* ANTES DE LAS 9 NADA */}
               <tr>
@@ -516,6 +520,7 @@ const ProgramSection: React.FC = () => {
                 <td className="bg-white">Breakfast</td>
                 <td className="bg-white">Breakfast</td>
               </tr>
+
               {/* 09:00–10:30 */}
               <tr>
                 <td className={`w-32 p-1 font-medium ${c.time}`}>09:00–10:30</td>
@@ -525,6 +530,7 @@ const ProgramSection: React.FC = () => {
                 <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
                 <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
               </tr>
+
               {/* 10:30–11:00 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>10:30–11:00</td>
@@ -534,6 +540,7 @@ const ProgramSection: React.FC = () => {
                 <td className={c.coffee}>Coffee Break</td>
                 <td className={c.coffee}>Coffee Break</td>
               </tr>
+
               {/* 11:00–12:30 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>11:00–12:30</td>
@@ -543,6 +550,7 @@ const ProgramSection: React.FC = () => {
                 <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
                 <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
               </tr>
+
               {/* 12:30–12:45 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>12:30–12:45</td>
@@ -552,6 +560,7 @@ const ProgramSection: React.FC = () => {
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
+
               {/* 12:45–14:00 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>12:45–14:00</td>
@@ -561,69 +570,80 @@ const ProgramSection: React.FC = () => {
                 <td className="bg-white">Lunch</td>
                 <td className="bg-white">Lunch</td>
               </tr>
-              {/* 14:00–14:15 */}
+
+              {/* 14:00–14:15  — INICIO del rowSpan para MIÉRCOLES */}
               <tr>
                 <td className={`p-1 ${c.time}`}>14:00–14:15</td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
-                <td className="bg-white">Excusrion / Free time </td>
+                {/* Wed: celda combinada para 7 filas (14:00 → 19:00) */}
+                <td rowSpan={7} className="bg-white align-middle font-medium">
+                  Excursion / Free time
+                </td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
+
               {/* 14:15–15:45 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>14:15–15:45</td>
                 <td className="bg-white">WG</td>
                 <td className="bg-white">WG</td>
-                <td className="bg-white">Excusrion / Free time</td>
+                {/* (omitimos Wed por rowSpan) */}
                 <td className="bg-white">WG</td>
                 <td className={c.gray}></td>
               </tr>
+
               {/* 15:45–16:15 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>15:45–16:15</td>
                 <td className={c.coffee}>Coffee Break</td>
                 <td className={c.coffee}>Coffee Break</td>
-                <td className="bg-white">Excusrion / Free time</td>
+                {/* (omitimos Wed por rowSpan) */}
                 <td className={c.coffee}>Coffee Break</td>
                 <td className={c.gray}></td>
               </tr>
+
               {/* 16:15–17:15 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>16:15–17:15</td>
                 <td className="bg-white">Seminar-1</td>
                 <td className={c.poster + " font-semibold"}>Poster Session</td>
-                <td className="bg-white">Excursion / Free time</td>
+                {/* (omitimos Wed por rowSpan) */}
                 <td className="bg-white">Seminar-2</td>
                 <td className={c.gray}></td>
               </tr>
+
               {/* 17:15–17:30 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>17:15–17:30</td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
-                <td className="bg-white">Excursion / Free time</td>
+                {/* (omitimos Wed por rowSpan) */}
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
+
               {/* 17:30–18:45 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>17:30–18:45</td>
                 <td className="bg-white">Welcome Drink</td>
                 <td className={c.gray}></td>
-                <td className="bg-white">Excursion / Free time</td>
+                {/* (omitimos Wed por rowSpan) */}
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
+
               {/* 18:45–19:00 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>18:45–19:00</td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
-                <td className="bg-white">Excursion / Free time</td>
+                {/* (omitimos Wed por rowSpan) */}
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
+
               {/* 19:00 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>19:00</td>
@@ -637,43 +657,42 @@ const ProgramSection: React.FC = () => {
           </table>
         </div>
 
-        {/* Leyenda tipo “barra de colores” */}
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3">
+        {/* Leyenda de colores */}
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
           <div className="flex items-center gap-2">
             <span className={`inline-block h-5 w-20 rounded ${c.mc1}`} />
             <span>MC-1</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className={`inline-block h-5 w-28 rounded ${c.poster}`} />
-            <span>Poster Session</span>
           </div>
           <div className="flex items-center gap-2">
             <span className={`inline-block h-5 w-24 rounded ${c.mc2}`} />
             <span>MC-2</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="inline-block h-5 w-16 rounded bg-white border border-gray-300" />
-            <span>WG / Coffee / Seminars / Lunch</span>
+            <span className={`inline-block h-5 w-28 rounded ${c.poster}`} />
+            <span>Posters</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className={`inline-block h-5 w-16 rounded ${c.gray}`} />
+            <span className={`inline-block h-5 w-20 rounded ${c.wg}`} />
+            <span>WG</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className={`inline-block h-5 w-28 rounded ${c.s1}`} />
+            <span>Seminar-1</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className={`inline-block h-5 w-28 rounded ${c.s2}`} />
+            <span>Seminar-2</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className={`inline-block h-5 w-20 rounded ${c.gray}`} />
             <span>Blocks / Free time</span>
           </div>
-        </div>
-
-        {/* Notas de carga horaria */}
-        <div className="mt-6 text-sm text-gray-700">
-          <ul className="list-disc ml-5 space-y-1">
-            <li><strong>MC:</strong> 16 h (3 credits)</li>
-            <li><strong>WG:</strong> 4.5 h</li>
-            <li><strong>Poster Session:</strong> 1 h</li>
-            <li><strong>Seminars:</strong> 2 h</li>
-          </ul>
         </div>
       </div>
     </SectionWrapper>
   );
 };
+
 
 
 
