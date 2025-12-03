@@ -657,7 +657,7 @@ const ProgramSection: React.FC = () => {
           </table>
         </div>
         <p>
-          MC = Mini Cuourse
+          MC = Mini Course
         </p>
 
         {/* Leyenda de colores */}
