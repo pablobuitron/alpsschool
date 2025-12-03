@@ -507,14 +507,23 @@ const ProgramSection: React.FC = () => {
               </tr>
             </thead>
             <tbody className="[&>tr>td]:border [&>tr>td]:border-gray-300 text-center align-middle">
-              {/* 09:00–10:30 */}
+              {/* ANTES DE LAS 9 NADA */}
               <tr>
-                <td className={`w-32 p-1 font-medium ${c.time}`}>09:00–10:30</td>
+                <td className={`w-32 p-1 font-medium ${c.time}`}> </td>
                 <td className={c.gray}></td>
                 <td className="bg-white">Breakfast</td>
                 <td className="bg-white">Breakfast</td>
                 <td className="bg-white">Breakfast</td>
                 <td className="bg-white">Breakfast</td>
+              </tr>
+              {/* 09:00–10:30 */}
+              <tr>
+                <td className={`w-32 p-1 font-medium ${c.time}`}>09:00–10:30</td>
+                <td className={c.gray}></td>
+                <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
+                <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
+                <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
+                <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
               </tr>
               {/* 10:30–11:00 */}
               <tr>
@@ -529,19 +538,19 @@ const ProgramSection: React.FC = () => {
               <tr>
                 <td className={`p-1 ${c.time}`}>11:00–12:30</td>
                 <td className={c.gray}></td>
-                <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
                 <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
                 <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
                 <td className={c.mc2 + " font-semibold"}>MC-2 (2h)</td>
+                <td className={c.mc1 + " font-semibold"}>MC-1 (2h)</td>
               </tr>
               {/* 12:30–12:45 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>12:30–12:45</td>
                 <td className={c.gray}></td>
-                <td className="bg-white"></td>
+                <td className={c.gray}></td>
                 <td className="bg-white">Photo</td>
-                <td className="bg-white"></td>
-                <td className="bg-white"></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
               </tr>
               {/* 12:45–14:00 */}
               <tr>
@@ -555,10 +564,10 @@ const ProgramSection: React.FC = () => {
               {/* 14:00–14:15 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>14:00–14:15</td>
-                <td className="bg-white"></td>
-                <td className="bg-white"></td>
-                <td className="bg-white"></td>
-                <td className="bg-white"></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className="bg-white">Excusrion / Free time </td>
+                <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
               {/* 14:15–15:45 */}
@@ -566,7 +575,7 @@ const ProgramSection: React.FC = () => {
                 <td className={`p-1 ${c.time}`}>14:15–15:45</td>
                 <td className="bg-white">WG</td>
                 <td className="bg-white">WG</td>
-                <td className="bg-white"></td>
+                <td className="bg-white">Excusrion / Free time</td>
                 <td className="bg-white">WG</td>
                 <td className={c.gray}></td>
               </tr>
@@ -575,7 +584,7 @@ const ProgramSection: React.FC = () => {
                 <td className={`p-1 ${c.time}`}>15:45–16:15</td>
                 <td className={c.coffee}>Coffee Break</td>
                 <td className={c.coffee}>Coffee Break</td>
-                <td className={c.coffee}>Coffee Break</td>
+                <td className="bg-white">Excusrion / Free time</td>
                 <td className={c.coffee}>Coffee Break</td>
                 <td className={c.gray}></td>
               </tr>
@@ -591,10 +600,10 @@ const ProgramSection: React.FC = () => {
               {/* 17:15–17:30 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>17:15–17:30</td>
-                <td className="bg-white"></td>
-                <td className="bg-white"></td>
                 <td className={c.gray}></td>
-                <td className="bg-white"></td>
+                <td className={c.gray}></td>
+                <td className="bg-white">Excursion / Free time</td>
+                <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
               {/* 17:30–18:45 */}
@@ -602,17 +611,17 @@ const ProgramSection: React.FC = () => {
                 <td className={`p-1 ${c.time}`}>17:30–18:45</td>
                 <td className="bg-white">Welcome Drink</td>
                 <td className={c.gray}></td>
-                <td className={c.gray}></td>
+                <td className="bg-white">Excursion / Free time</td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
               {/* 18:45–19:00 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>18:45–19:00</td>
-                <td className="bg-white"></td>
-                <td className="bg-white"></td>
-                <td className="bg-white"></td>
-                <td className="bg-white"></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className="bg-white">Excursion / Free time</td>
+                <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
               {/* 19:00 */}
