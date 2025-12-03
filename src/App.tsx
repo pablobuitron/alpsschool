@@ -685,7 +685,7 @@ const ProgramSection: React.FC = () => {
           </div>
           <div className="flex items-center gap-2">
             <span className={`inline-block h-5 w-20 rounded ${c.gray}`} />
-            <span>Blocks / Free time</span>
+            <span>Free time</span>
           </div>
         </div>
       </div>
