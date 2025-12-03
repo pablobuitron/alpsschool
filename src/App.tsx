@@ -608,7 +608,7 @@ const ProgramSection: React.FC = () => {
               <tr>
                 <td className={`p-1 ${c.time}`}>16:15–17:15</td>
                 <td className={c.s1}>Seminar-1</td>
-                <td className={c.poster  "}>Poster Session</td>
+                <td className={c.poster}>Poster Session</td>
                 {/* (omitimos Wed por rowSpan) */}
                 <td className={c.s2}>Seminar-2</td>
                 <td className={c.gray}></td>
