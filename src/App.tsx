@@ -273,6 +273,10 @@ const AboutSection: React.FC = () => (
       </p>
 
       <p>
+        The scientific program will include two courses of 8 hours each, two seminars, six working groups, and a poster session.
+      </p>
+
+      <p>
         The School will feature <strong>lectures by leading experts</strong>,{" "}
         <strong>collaborative working sessions</strong>, and{" "}
         <strong>hands-on software development activities</strong>, with a particular focus
