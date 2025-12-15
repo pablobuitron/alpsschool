@@ -201,93 +201,105 @@ const HomeSection: React.FC = () => (
     </section>
 
     <section className="relative z-10 bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* FUNDING & SPONSOR LOGOS */}
-        <div className="max-w-5xl mx-auto space-y-10">
+    {/* FUNDING & SPONSOR LOGOS */}
+    <div className="max-w-5xl mx-auto space-y-16">
 
-          {/* Funded by */}
-          <div>
-            <p className="text-center mb-4">
-              <strong>Funded by:</strong>
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-10">
-              {/* Torino mate */}
-              <img
-                src="./torinologo.png"
-                alt="University of Turin Maths Department"
-                className="h-20 object-contain bg-white p-3 rounded-lg"
-              />
+      {/* Funded by */}
+      <div>
+        <p className="text-left mb-4">
+          <strong>Funded by:</strong>
+        </p>
 
-              {/* GNC INDAM */}
-              <img
-                src="./indam.jpeg"
-                alt="GNCS INDAM"
-                className="h-20 object-contain bg-white p-3 rounded-lg"
-              />
+        <div className="flex flex-wrap justify-start items-center gap-12">
 
-              {/* Uninettuno mate */}
-              <img
-                src="./uninetlogo.png"
-                alt="Uninettuno University Maths Department"
-                className="h-20 object-contain bg-white p-3 rounded-lg"
-              />
-            </div>
-          </div>
+          {/* Torino mate */}
+          <img
+            src="./torinologo.png"
+            alt="University of Turin Maths Department"
+            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+          />
 
-          {/* Sponsored by */}
-          <div>
-            <p className="text-center mb-4">
-              <strong>Sponsored by:</strong>
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-10">
-              {/* Torino no mate */}
-              <img
-                src="./utorinologo.png"
-                alt="University of Turin"
-                className="h-20 object-contain bg-white p-3 rounded-lg"
-              />
+          {/* GNC INDAM */}
+          <img
+            src="./indam.jpeg"
+            alt="GNCS INDAM"
+            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+          />
 
-              {/* Padova */}
-              <img
-                src="./padovalogo.jpeg"
-                alt="University of Padua"
-                className="h-20 object-contain bg-white p-3 rounded-lg"
-              />
+          {/* Uninettuno mate */}
+          <img
+            src="./uninetlogo.png"
+            alt="Uninettuno University Maths Department"
+            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+          />
 
-              {/* Uninettuno no mate */}
-              <img
-                src="./uninettlogouniv.png"
-                alt="University Unninettuno"
-                className="h-20 object-contain bg-white p-3 rounded-lg"
-              />
+        </div>
+      </div>
 
-              {/* Simai Sponsor */}
-              <img
-                src="./sponsor.jpeg"
-                alt="Simai sponsor"
-                className="h-20 object-contain bg-white p-3 rounded-lg"
-              />
+      {/* Sponsored by */}
+      <div>
+        <p className="text-left mb-4">
+          <strong>Sponsored by:</strong>
+        </p>
 
-              {/* ANA&A */}
-              <img
-                src="./annalogo.png"
-                alt="Gruppo di attivita AnA&A"
-                className="h-20 object-contain bg-white p-3 rounded-lg"
-              />
+        <div className="flex flex-wrap justify-start items-center gap-12">
 
-              {/* RITA */}
-              <img
-                src="./rita_logo.jpeg"
-                alt="Rete Italiana di Approssimazione"
-                className="h-20 object-contain bg-white p-3 rounded-lg"
-              />
-            </div>
+          {/* Torino non mate */}
+          <img
+            src="./utorinologo.png"
+            alt="University of Turin"
+            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+          />
+
+          {/* Padova */}
+          <img
+            src="./padovalogo.jpeg"
+            alt="University of Padua"
+            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+          />
+
+          {/* Uninettuno non mate */}
+          <img
+            src="./uninettlogouniv.png"
+            alt="University Uninettuno"
+            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+          />
+
+          {/* Simai Sponsor */}
+          <img
+            src="./sponsor.jpeg"
+            alt="Simai sponsor"
+            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+          />
+
+          {/* ANA&A */}
+          <img
+            src="./annalogo.png"
+            alt="Gruppo di attivita AnA&A"
+            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+          />
+
+          {/* RITA */}
+          <div className="flex flex-col items-start">
+            <img
+              src="./rita_logo.jpeg"
+              alt="Rete Italiana di Approssimazione"
+              className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+            />
+            <span className="text-sm text-gray-700 mt-1">
+              Rete ITaliana di Approssimazione
+            </span>
           </div>
 
         </div>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
+
   </>
 );
 
