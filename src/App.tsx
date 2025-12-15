@@ -232,7 +232,7 @@ const HomeSection: React.FC = () => (
           <img
             src="./uninetlogo.png"
             alt="Uninettuno University Maths Department"
-            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
+            className="h-33 object-contain bg-white p-4 rounded-lg shadow"
           />
 
         </div>
