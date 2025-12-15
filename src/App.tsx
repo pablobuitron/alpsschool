@@ -218,21 +218,21 @@ const HomeSection: React.FC = () => (
           <img
             src="./torinologo.png"
             alt="University of Turin Maths Department"
-            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
           />
 
           {/* GNC INDAM */}
           <img
             src="./indam.jpeg"
             alt="GNCS INDAM"
-            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
           />
 
           {/* Uninettuno mate */}
           <img
             src="./uninetlogo.png"
             alt="Uninettuno University Maths Department"
-            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
           />
 
         </div>
@@ -250,48 +250,43 @@ const HomeSection: React.FC = () => (
           <img
             src="./utorinologo.png"
             alt="University of Turin"
-            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
           />
 
           {/* Padova */}
           <img
             src="./padovalogo.jpeg"
             alt="University of Padua"
-            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
           />
 
           {/* Uninettuno non mate */}
           <img
             src="./uninettlogouniv.png"
             alt="University Uninettuno"
-            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
           />
 
           {/* Simai Sponsor */}
           <img
             src="./sponsor.jpeg"
             alt="Simai sponsor"
-            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
           />
 
           {/* ANA&A */}
           <img
             src="./annalogo.png"
             alt="Gruppo di attivita AnA&A"
-            className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
+            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
           />
 
           {/* RITA */}
-          <div className="flex flex-col items-start">
-            <img
-              src="./rita_logo.jpeg"
-              alt="Rete Italiana di Approssimazione"
-              className="h-28 object-contain bg-white p-4 rounded-lg shadow-sm"
-            />
-            <span className="text-sm text-gray-700 mt-1">
-              Rete ITaliana di Approssimazione
-            </span>
-          </div>
+          <img
+            src="./rita_logo.jpeg"
+            alt="Rete Italiana di Approssimazione"
+            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
+          />
 
         </div>
       </div>
@@ -299,6 +294,7 @@ const HomeSection: React.FC = () => (
     </div>
   </div>
 </section>
+
 
   </>
 );
