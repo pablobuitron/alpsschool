@@ -200,51 +200,94 @@ const HomeSection: React.FC = () => (
       </div>
     </section>
 
-<section className="relative z-10 bg-gray-50 py-20">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative z-10 bg-gray-50 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    {/* GRID 2x2 */}
-    <div className="grid grid-cols-2 gap-12 max-w-4xl mx-auto items-center justify-items-center">
+        {/* FUNDING & SPONSOR LOGOS */}
+        <div className="max-w-5xl mx-auto space-y-10">
 
-      {/* Torino */}
-      <div className="flex justify-center items-center">
-        <img
-          src="./torinologo.png"
-          alt="University of Turin"
-          className="h-41 object-contain bg-white p-3 rounded-lg"
-        />
+          {/* Funded by */}
+          <div>
+            <p className="text-center mb-4">
+              <strong>Funded by:</strong>
+            </p>
+            <div className="flex flex-wrap justify-center items-center gap-10">
+              {/* Torino mate */}
+              <img
+                src="./torinologo.png"
+                alt="University of Turin Maths Department"
+                className="h-20 object-contain bg-white p-3 rounded-lg"
+              />
+
+              {/* GNC INDAM */}
+              <img
+                src="./indam.jpeg"
+                alt="GNCS INDAM"
+                className="h-20 object-contain bg-white p-3 rounded-lg"
+              />
+
+              {/* Uninettuno mate */}
+              <img
+                src="./uninetlogo.png"
+                alt="Uninettuno University Maths Department"
+                className="h-20 object-contain bg-white p-3 rounded-lg"
+              />
+            </div>
+          </div>
+
+          {/* Sponsored by */}
+          <div>
+            <p className="text-center mb-4">
+              <strong>Sponsored by:</strong>
+            </p>
+            <div className="flex flex-wrap justify-center items-center gap-10">
+              {/* Torino no mate */}
+              <img
+                src="./utorinologo.png"
+                alt="University of Turin"
+                className="h-20 object-contain bg-white p-3 rounded-lg"
+              />
+
+              {/* Padova */}
+              <img
+                src="./padovalogo.jpeg"
+                alt="University of Padua"
+                className="h-20 object-contain bg-white p-3 rounded-lg"
+              />
+
+              {/* Uninettuno no mate */}
+              <img
+                src="./uninettlogouniv.png"
+                alt="University Unninettuno"
+                className="h-20 object-contain bg-white p-3 rounded-lg"
+              />
+
+              {/* Simai Sponsor */}
+              <img
+                src="./sponsor.jpeg"
+                alt="Simai sponsor"
+                className="h-20 object-contain bg-white p-3 rounded-lg"
+              />
+
+              {/* ANA&A */}
+              <img
+                src="./annalogo.png"
+                alt="Gruppo di attivita AnA&A"
+                className="h-20 object-contain bg-white p-3 rounded-lg"
+              />
+
+              {/* RITA */}
+              <img
+                src="./rita_logo.jpeg"
+                alt="Rete Italiana di Approssimazione"
+                className="h-20 object-contain bg-white p-3 rounded-lg"
+              />
+            </div>
+          </div>
+
+        </div>
       </div>
-
-      {/* Uninettuno */}
-      <div className="flex justify-center items-center">
-        <img
-          src="./uninetlogo.png"
-          alt="Uninettuno University"
-          className="h-33 object-contain bg-white p-3 rounded-lg"
-        />
-      </div>
-
-      {/* Padova */}
-      <div className="flex justify-center items-center">
-        <img
-          src="./padovalogo.jpeg"
-          alt="University of Padua"
-          className="h-33 object-contain bg-white p-3 rounded-lg"
-        />
-      </div>
-
-      {/* Simai Sponsor */}
-      <div className="flex justify-center items-center">
-        <img
-          src="./sponsor.jpeg"
-          alt="Simai sponsor"
-          className="h-33 object-contain bg-white p-3 rounded-lg"
-        />
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
   </>
 );
 
@@ -292,28 +335,9 @@ const AboutSection: React.FC = () => (
         <strong>The maximum number of participants will be limited to 50.</strong>
       </p>
 
-      {/* ---- LOGO DOS LÍNEAS DEBAJO ---- */}
-      <div className="flex justify-center items-center gap-10 mt-6">
-        <img
-          src="./sponsor.jpeg"
-          alt="Sponsor"
-          className="h-[180px] object-contain bg-white p-3 rounded-xl shadow-sm"
-        />
-
-        <img
-          src="./indam.jpeg"
-          alt="INDAM"
-          className="h-[180px] object-contain bg-white p-3 rounded-xl shadow-sm"
-        />
-      </div>
-
     </div>
   </SectionWrapper>
 );
-
-
-
-
 
 /* ---------- COMMITTEES ---------- */
 const CommitteesSection: React.FC<{
@@ -349,6 +373,7 @@ const CommitteesSection: React.FC<{
     </div>
   </SectionWrapper>
 );
+
 
 /* ---------- WORKING GROUPS ---------- */
 const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
