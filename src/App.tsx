@@ -480,6 +480,9 @@ const LecturersSection: React.FC = () => (
   <SectionWrapper title="Lecturers">
     <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
       <div>
+        <p><strong>
+          The two minicourses of 8 hours each one are:
+          </strong></p>
         <h3 className="text-xl font-semibold">Teresa Perez</h3>
         <p>Department of Mathematics, University of Granada, Spain</p>
         <p>
