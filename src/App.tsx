@@ -481,7 +481,7 @@ const LecturersSection: React.FC = () => (
     <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
       <div>
         <p><strong>
-          The two minicourses of 8 hours each one are:
+          The two minicourses of 8 hours each are:
           </strong></p>
         <p><strong>Teresa Perez</strong></p>
         <p>Department of Mathematics, University of Granada, Spain</p>
