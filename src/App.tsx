@@ -405,10 +405,6 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
         'Approximation by Algebraic Functions: From One to Several Variables, with Applications',
     },
     {
-      names: ['Donatella Occorsio', 'Maria Grazia Russo'],
-      topic: 'Approximation methods for functional equations',
-    },
-    {
       names: ['Amir Noorizadegan', 'Roberto Cavoretto'],
       topic: 'Meshless methods and scientific Machine Learning',
     },
