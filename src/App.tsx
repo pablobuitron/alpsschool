@@ -483,7 +483,7 @@ const LecturersSection: React.FC = () => (
         <p><strong>
           The two minicourses of 8 hours each one are:
           </strong></p>
-        <h3 className="text-xl font-semibold">Teresa Perez</h3>
+        <p><strong>Teresa Perez</strong></p>
         <p>Department of Mathematics, University of Granada, Spain</p>
         <p>
           “Orthogonal Polynomials in Several Variables: From Hermite to Zernike
@@ -491,7 +491,7 @@ const LecturersSection: React.FC = () => (
         </p>
       </div>
       <div>
-        <h3 className="text-xl font-semibold">Nick Hale</h3>
+        <p><strong>Nick Hale</strong></p>
         <p>Applied Mathematics, Stellenbosch University, South Africa</p>
         <p>“Computational Approximation with Chebfun.”</p>
       </div>
