@@ -491,9 +491,7 @@ const LecturersSection: React.FC = () => (
         </p>
       </div>
       <div>
-        <p><strong>Nick Hale</strong></p>
-        <p>Applied Mathematics, Stellenbosch University, South Africa</p>
-        <p>“Computational Approximation with Chebfun.”</p>
+        <p><strong>TBA</strong></p>
       </div>
     </div>
   </SectionWrapper>
