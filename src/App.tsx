@@ -34,9 +34,7 @@ function App() {
     { name: 'Nicola Mastronardi', affiliation: 'IAC - CNR, Italy' },
     { name: 'Amir Noorizadegan', affiliation: 'Hong Kong Baptist University' },
     { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
-    { name: 'Donatella Occorsio', affiliation: 'University of Basilicata, Italy' },
     { name: 'Giuseppe Rodriguez', affiliation: 'University of Cagliari, Italy' },
-    { name: 'Maria Grazia Russo', affiliation: 'University of Basilicata, Italy' },
     { name: 'Alvise Sommariva', affiliation: 'University of Padua, Italy' },
   ];
 
