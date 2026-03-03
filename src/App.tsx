@@ -461,12 +461,12 @@ const PostersSection: React.FC = () => (
     <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-4">
       <p>
         Participants are encouraged to present their research results during the poster session.
-        Poster abstracts (one page in PDF format) should be submitted by <strong>February 28, 2026</strong>,
+        Poster abstracts (one page in PDF format) should be submitted by <strong>March 20, 2026</strong>,
         via email to <strong>Incoronata Notarangelo</strong> (incoronata.notarangelo@unito.it)
         and <strong>Alvise Sommariva</strong> (alvise@math.unipd.it).
       </p>
       <p>
-        <strong>Notification of acceptance</strong> will be sent by <strong>March 15, 2026</strong>.
+        <strong>Notification of acceptance</strong> will be sent by <strong>March 31, 2026</strong>.
       </p>
     </div>
   </SectionWrapper>
@@ -487,6 +487,21 @@ const LecturersSection: React.FC = () => (
           “Orthogonal Polynomials in Several Variables: From Hermite to Zernike
           and Beyond. Applications in Optics.”
         </p>
+
+        <p>
+          Abstract: The general theory of multivariate orthogonal polynomial (MOP) is far from being considered a fully established mathematical theory, since its evolution has been late and incomplete, primarily because its study has been conditioned by the development of its many and varied applications. From a purely theoretical point of view, it seems that the first reference to multivariate orthogonal polynomials dates back to 1865, when C. Hermite studied the natural extension to two variables of the Legendre and Chebyshev polynomials, giving rise to the first families of bivariate orthogonal polynomials, and observed that the theory cannot be understood as a simple generalization of univariate orthogonal polynomials. At first glance, it might seem that the construction and study of orthogonal polynomials in several variables presents no greater difficulties than those encountered when considering a single variable. In theory, it would suffice to apply standard orthogonalization algorithms to the ordered sequence of monomials to obtain the orthogonal polynomials. But here the first serious difficulty immediately arises: there is no a single ordering of the base powers of the monomials. Thus, it is necessary to choose an order based on the objective. The choice of this order determines theories with very different properties. One area of applications is in Optics and Optometry through Zernike polynomials, that are classical polynomials on the unit disk orthogonal with respect to the Legendre measure. The families of multivariate orthogonal polynomials typically involved in the applications are the socalled classical orthogonal polynomials. The reason for their effectiveness in various applications lies primarily in the fact that they are solutions to partial differential equations, and in the differential properties of the weight functions that define them. However, several factors cause the applications described above to exhibit dysfunctions and these can be improved by changing the basis of MOP based on perturbations of the classical scalar products or by defining new orthogonality concepts.
+        </p>
+        
+        <p><strong>Sheehan Olver</strong></p>
+        <p>Department of Mathematics, Imperial College of London, United Kingdom</p>
+        <p>
+          “Representation Theory Meets Approximation Theory”
+        </p>
+
+        <p>
+          Abstract: Spherical harmonics are an example of a symmetry-adapted basis that captures rotational symmetry of the sphere in 3D, and have numerous advantages such as the parallelisation of the numerical solution of partial differential equations. In this mini-course we see how this idea can be generalised to discrete symmetry groups corresponding to the square (dihedral group), cube (octohedral group) or permutations (symmetric group). In particular, we will see how symmetry-adapted bases can be numerically constructed which translate group actions into irreducible representations; the building blocks of representation theory.  We will discuss from first principles the basics of representation theory and how they can lead to numerical techniques for constructing symmetry-adapted bases. Applications include parallelisation of partial differential equations such as multiple particle Schrödinger equation and Maxwell’s equation and the construction of equivariant neural networks.
+        </p>
+
       </div>
       <div>
         <p><strong>TBA</strong></p>
@@ -576,7 +591,7 @@ const ProgramSection: React.FC = () => {
                 <td className={c.mc2}>MC-2 (2h)</td>
                 <td className={c.mc1}>MC-1 (2h)</td>
                 <td className={c.mc2}>MC-2 (2h)</td>
-                <td className={c.mc1}>MC-1 (2h)</td>
+                <td className={c.wg}>WG</td>
               </tr>
 
               {/* 12:30–12:45 */}
@@ -615,7 +630,7 @@ const ProgramSection: React.FC = () => {
               {/* 14:15–15:45 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>14:15–15:45</td>
-                <td className={c.wg}>WG</td>
+                <td className={c.mc1}>MC-1 (2h)</td>
                 <td className={c.wg}>WG</td>
                 {/* (omitimos Wed por rowSpan) */}
                 <td className={c.wg}>WG</td>
@@ -832,13 +847,16 @@ const ImportantDatesSection: React.FC = () => (
   <SectionWrapper title="Important Dates">
     <ul className="list-none space-y-2">
         <li>
-          <strong>February 15, 2026:</strong> Deadline to contact the Working Group organizers to be included in a Working Group
+          <strong>March 20, 2026:</strong> Deadline to contact the Working Group organizers to be included in a Working Group
         </li>
         <li>
-          <strong>February 28, 2026:</strong> Poster abstract submission deadline
+          <strong>March 20, 2026:</strong> Poster abstract submission deadline
         </li>
         <li>
-          <strong>February 28, 2026:</strong> Working Group participant list due (to be provided by WG organizers)
+          <strong>March 31, 2026:</strong> Notification of poster acceptance
+        </li>
+        <li>
+          <strong>March 31, 2026:</strong> Deadline for submission of the Working Group participant list (to be provided by WG organizers)
         </li>
         <li>
           <strong>March 15, 2026:</strong> Registration deadline
