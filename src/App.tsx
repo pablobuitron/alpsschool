@@ -491,8 +491,9 @@ const LecturersSection: React.FC = () => (
         <p>
           Abstract: The general theory of multivariate orthogonal polynomial (MOP) is far from being considered a fully established mathematical theory, since its evolution has been late and incomplete, primarily because its study has been conditioned by the development of its many and varied applications. From a purely theoretical point of view, it seems that the first reference to multivariate orthogonal polynomials dates back to 1865, when C. Hermite studied the natural extension to two variables of the Legendre and Chebyshev polynomials, giving rise to the first families of bivariate orthogonal polynomials, and observed that the theory cannot be understood as a simple generalization of univariate orthogonal polynomials. At first glance, it might seem that the construction and study of orthogonal polynomials in several variables presents no greater difficulties than those encountered when considering a single variable. In theory, it would suffice to apply standard orthogonalization algorithms to the ordered sequence of monomials to obtain the orthogonal polynomials. But here the first serious difficulty immediately arises: there is no a single ordering of the base powers of the monomials. Thus, it is necessary to choose an order based on the objective. The choice of this order determines theories with very different properties. One area of applications is in Optics and Optometry through Zernike polynomials, that are classical polynomials on the unit disk orthogonal with respect to the Legendre measure. The families of multivariate orthogonal polynomials typically involved in the applications are the socalled classical orthogonal polynomials. The reason for their effectiveness in various applications lies primarily in the fact that they are solutions to partial differential equations, and in the differential properties of the weight functions that define them. However, several factors cause the applications described above to exhibit dysfunctions and these can be improved by changing the basis of MOP based on perturbations of the classical scalar products or by defining new orthogonality concepts.
         </p>
-        
+
         <p><strong>Sheehan Olver</strong></p>
+        
         <p>Department of Mathematics, Imperial College of London, United Kingdom</p>
         <p>
           “Representation Theory Meets Approximation Theory”
@@ -502,9 +503,6 @@ const LecturersSection: React.FC = () => (
           Abstract: Spherical harmonics are an example of a symmetry-adapted basis that captures rotational symmetry of the sphere in 3D, and have numerous advantages such as the parallelisation of the numerical solution of partial differential equations. In this mini-course we see how this idea can be generalised to discrete symmetry groups corresponding to the square (dihedral group), cube (octohedral group) or permutations (symmetric group). In particular, we will see how symmetry-adapted bases can be numerically constructed which translate group actions into irreducible representations; the building blocks of representation theory.  We will discuss from first principles the basics of representation theory and how they can lead to numerical techniques for constructing symmetry-adapted bases. Applications include parallelisation of partial differential equations such as multiple particle Schrödinger equation and Maxwell’s equation and the construction of equivariant neural networks.
         </p>
 
-      </div>
-      <div>
-        <p><strong>TBA</strong></p>
       </div>
     </div>
   </SectionWrapper>
