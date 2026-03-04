@@ -756,7 +756,7 @@ const RegistrationSection: React.FC = () => (
           <strong>Mode of Study:</strong> on campus
         </li>
         <li>
-          <strong>Application deadline:</strong> March 30th, 2026
+          <strong>Application deadline:</strong> April 15th, 2026
         </li>
       </ul>
 
@@ -774,7 +774,7 @@ const RegistrationSection: React.FC = () => (
       </p>
 
       <p>
-        Please be informed that as of <strong>March 30th, 2026</strong>, those who have
+        Please be informed that as of <strong>April 15th, 2026</strong>, those who have
         filled out the application form will be contacted via email by{" "}
         <strong>Dr. Tiziana Giovannelli</strong> (
         <a
