@@ -493,7 +493,7 @@ const LecturersSection: React.FC = () => (
         </p>
 
         <p><strong>Sheehan Olver</strong></p>
-        
+
         <p>Department of Mathematics, Imperial College of London, United Kingdom</p>
         <p>
           “Representation Theory Meets Approximation Theory”
@@ -756,7 +756,7 @@ const RegistrationSection: React.FC = () => (
           <strong>Mode of Study:</strong> on campus
         </li>
         <li>
-          <strong>Application deadline:</strong> March 15th, 2026
+          <strong>Application deadline:</strong> March 30th, 2026
         </li>
       </ul>
 
@@ -774,7 +774,7 @@ const RegistrationSection: React.FC = () => (
       </p>
 
       <p>
-        Please be informed that as of <strong>March 15th, 2026</strong>, those who have
+        Please be informed that as of <strong>March 30th, 2026</strong>, those who have
         filled out the application form will be contacted via email by{" "}
         <strong>Dr. Tiziana Giovannelli</strong> (
         <a
@@ -857,10 +857,10 @@ const ImportantDatesSection: React.FC = () => (
           <strong>March 31, 2026:</strong> Deadline for submission of the Working Group participant list (to be provided by WG organizers)
         </li>
         <li>
-          <strong>March 15, 2026:</strong> Registration deadline
+          <strong>April 15, 2026:</strong> Registration deadline
         </li>
         <li>
-          <strong>March 31, 2026:</strong> Payment deadline
+          <strong>April 30, 2026:</strong> Payment deadline
         </li>
       </ul>
   </SectionWrapper>
