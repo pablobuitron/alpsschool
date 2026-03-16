@@ -27,7 +27,6 @@ function App() {
     { name: 'Praveen Agarwal', affiliation: 'ANAND ICE College, Jaipur, India' },
     { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
     { name: 'Clemente Cesarano', affiliation: 'Uninettuno University' },
-    { name: "Francesco Dell'Accio", affiliation: 'University of Calabria, Italy' },
     { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
     { name: 'Luisa Fermo', affiliation: 'University of Cagliari, Italy' },
     { name: 'Francisco Marcellan', affiliation: 'University Carlos III Madrid, Spain' },
@@ -396,11 +395,6 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
     {
       names: ['Nicola Mastronardi', 'Francisco Marcellan'],
       topic: 'Sobolev orthogonal polynomials: theoretical and computational aspects',
-    },
-    {
-      names: ["Francesco Dell'Accio"],
-      topic:
-        'Approximation by Algebraic Functions: From One to Several Variables, with Applications',
     },
     {
       names: ['Amir Noorizadegan', 'Roberto Cavoretto'],
