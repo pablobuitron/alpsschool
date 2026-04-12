@@ -512,8 +512,8 @@ const LecturersSection: React.FC = () => (
 const SeminarsSection: React.FC = () => (
   <SectionWrapper title="Seminars">
 
-  <p><strong>Roman Dmytryshyn Vasyl Stefanyk</strong></p>
-  <p> Carpathian National University, Ukraine</p>
+  <p><strong>Roman Dmytryshyn </strong></p>
+  <p> Vasyl Stefanyk Carpathian National University, Ukraine</p>
 
   <p><strong>Title:</strong></p>
   <p> Representations of Analytical Functions by Branched Continued Fractions</p>
