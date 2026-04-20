@@ -449,19 +449,93 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
 };
 
 
+
 /* ---------- POSTERS ---------- */
 const PostersSection: React.FC = () => (
   <SectionWrapper title="Posters">
-    <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-4">
-      <p>
-        Participants are encouraged to present their research results during the poster session.
-        Poster abstracts (one page in PDF format) should be submitted by <strong>March 20, 2026</strong>,
-        via email to <strong>Incoronata Notarangelo</strong> (incoronata.notarangelo@unito.it)
-        and <strong>Alvise Sommariva</strong> (alvise@math.unipd.it).
-      </p>
-      <p>
-        <strong>Notification of acceptance</strong> will be sent by <strong>March 31, 2026</strong>.
-      </p>
+    <div className="max-w-4xl mx-auto text-gray-800 space-y-6">
+      
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          Adaptive RBF algorithm for scattered data cubature on spherical polygons
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Roberto Cavoretto <span className="text-gray-600">(University of Torino)</span>
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          A Nystrom method for fractional integro-differential equations
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Maria Carmela De Bonis <span className="text-gray-600">(University of Basilicata)</span>
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          Approximation Methods for Community Detection in Graphs: Classical and Learning-Based Approaches
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Alessandra De Rossi <span className="text-gray-600">(University of Torino)</span>
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          Boyanov-Naydenov problem and the inequalities of various metrics
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Daniil Doroshenko <span className="text-gray-600">(Oles Honchar Dnipro National University)</span>
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          Minimal-norm least-squares solution of first-kind integral equations: an approach which better approximates the continuous model
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Luisa Fermo <span className="text-gray-600">(University of Cagliari)</span>
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          Adaptive Basis Function Optimization in Kolmogorov-Arnold Networks (KANs)
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Adeeba Haider <span className="text-gray-600">(University of Torino)</span>
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          Some estimates for the error of best polynomial approximation of composite functions
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Concetta Laurita <span className="text-gray-600">(University of Basilicata)</span>
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          Reliable computation of Gegenbauer-Sobolev polynomials and their zeros
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Niel Van Buggenhout <span className="text-gray-600">(Universidad Carlos III de Madrid)</span>
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-lg font-semibold leading-snug">
+          Enriched Krylov spaces for general form regularization
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Giuseppe Rodriguez <span className="text-gray-600">(University of Cagliari)</span>
+        </p>
+      </div>
+
     </div>
   </SectionWrapper>
 );
@@ -518,6 +592,12 @@ const SeminarsSection: React.FC = () => (
   <p><strong>Title:</strong></p>
   <p> Representations of Analytical Functions by Branched Continued Fractions</p>
 
+  <p><strong>Woula Themistoclakis </strong></p>
+  <p> CNR National Research Council of Italy - IAC Institute</p>
+
+  <p><strong>Title:</strong></p>
+  <p> On Polynomial Wavelets via de la Vallée Poussin Interpolation and Their Applications</p>
+
     
   </SectionWrapper>
 );
@@ -531,7 +611,7 @@ const ProgramSection: React.FC = () => {
     gray: "bg-gray-200",            // bloques grises
     coffee: "bg-white",             // coffee (borde visible)
     mc1: "bg-[#cfe5ff]",            // azul claro MC-1
-    mc2: "bg-[#c8f27a]",            // verde MC-2
+    mc2: "bg-[#c8f27a]",            // verde MC-Perez
     poster: "bg-orange-300",        // NUEVO: Posters naranja
     wg: "bg-yellow-300",            // NUEVO: WG amarillo (leyenda)
     s1: "bg-[#d8f3dc]",             // NUEVO: Seminar-1 verde pálido (leyenda)
@@ -571,10 +651,10 @@ const ProgramSection: React.FC = () => {
               <tr>
                 <td className={`w-32 p-1 font-medium ${c.time}`}>09:00–10:30</td>
                 <td className={c.gray}></td>
-                <td className={c.mc1}>MC-1 (2h)</td>
-                <td className={c.mc2}>MC-2 (2h)</td>
-                <td className={c.mc1}>MC-1 (2h)</td>
-                <td className={c.mc2}>MC-2 (2h)</td>
+                <td className={c.mc1}>MC-Olver (2h)</td>
+                <td className={c.mc2}>MC-Perez (2h)</td>
+                <td className={c.mc1}>MC-Olver (2h)</td>
+                <td className={c.mc2}>MC-Perez (2h)</td>
               </tr>
 
               {/* 10:30–11:00 */}
@@ -591,9 +671,9 @@ const ProgramSection: React.FC = () => {
               <tr>
                 <td className={`p-1 ${c.time}`}>11:00–12:30</td>
                 <td className={c.gray}></td>
-                <td className={c.mc2}>MC-2 (2h)</td>
-                <td className={c.mc1}>MC-1 (2h)</td>
-                <td className={c.mc2}>MC-2 (2h)</td>
+                <td className={c.mc2}>MC-Perez (2h)</td>
+                <td className={c.mc1}>MC-Olver (2h)</td>
+                <td className={c.mc2}>MC-Perez (2h)</td>
                 <td className={c.wg}>WG</td>
               </tr>
 
@@ -633,7 +713,7 @@ const ProgramSection: React.FC = () => {
               {/* 14:15–15:45 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>14:15–15:45</td>
-                <td className={c.mc1}>MC-1 (2h)</td>
+                <td className={c.mc1}>MC-Olver (2h)</td>
                 <td className={c.wg}>WG</td>
                 {/* (omitimos Wed por rowSpan) */}
                 <td className={c.wg}>WG</td>
@@ -710,11 +790,11 @@ const ProgramSection: React.FC = () => {
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
           <div className="flex items-center gap-2">
             <span className={`inline-block h-5 w-20 rounded ${c.mc1}`} />
-            <span>MC-1</span>
+            <span>MC-Olver</span>
           </div>
           <div className="flex items-center gap-2">
             <span className={`inline-block h-5 w-24 rounded ${c.mc2}`} />
-            <span>MC-2</span>
+            <span>MC-Perez</span>
           </div>
           <div className="flex items-center gap-2">
             <span className={`inline-block h-5 w-28 rounded ${c.poster}`} />
