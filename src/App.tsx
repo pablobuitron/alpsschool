@@ -931,16 +931,7 @@ const RegistrationSection: React.FC = () => (
       </ul>
 
       <p>
-        You can register{" "}
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLScbcc7g6VgkQ2ntFqlQ6NZVAJJplLAVgj4on-L3CVabdcu24g/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-700 underline hover:text-blue-900"
-        >
-          here
-        </a>
-        .
+        Registration is closed.
       </p>
 
       <p>
@@ -1030,7 +1021,7 @@ const ImportantDatesSection: React.FC = () => (
           <strong>April 15, 2026:</strong> Registration deadline
         </li>
         <li>
-          <strong>April 30, 2026:</strong> Payment deadline
+          <strong>May 10, 2026:</strong> Payment deadline
         </li>
       </ul>
   </SectionWrapper>
