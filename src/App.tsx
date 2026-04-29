@@ -724,7 +724,7 @@ const ProgramSection: React.FC = () => {
             <tbody className="[&>tr>td]:border [&>tr>td]:border-gray-300 text-center align-middle">
               {/* ANTES DE LAS 9 NADA */}
               <tr>
-                <td className={`w-32 p-1 font-medium ${c.time}`}> </td>
+                <td className={`w-32 p-1 font-medium ${c.time}`}>07:30-09:00</td>
                 <td className={c.gray}></td>
                 <td className="bg-white">Breakfast</td>
                 <td className="bg-white">Breakfast</td>
@@ -847,7 +847,7 @@ const ProgramSection: React.FC = () => {
 
               {/* 18:45–19:00 */}
               <tr>
-                <td className={`p-1 ${c.time}`}>18:45–19:00</td>
+                <td className={`p-1 ${c.time}`}>18:45–19:30</td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
                 {/* (omitimos Wed por rowSpan) */}
@@ -857,7 +857,7 @@ const ProgramSection: React.FC = () => {
 
               {/* 19:00 */}
               <tr>
-                <td className={`p-1 ${c.time}`}>19:00</td>
+                <td className={`p-1 ${c.time}`}>19:30</td>
                 <td className={c.dinner}>Dinner</td>
                 <td className={c.dinner}>Dinner</td>
                 <td className={c.dinner}>Dinner</td>
