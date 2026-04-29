@@ -869,6 +869,7 @@ const ProgramSection: React.FC = () => {
         </div>
         <p>
           MC = Mini Course
+          WG = Working Groups
         </p>
 
         {/* Leyenda de colores */}
