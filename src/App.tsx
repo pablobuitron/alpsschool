@@ -484,10 +484,10 @@ const PostersSection: React.FC = () => (
 
       <div className="border-b border-gray-200 pb-4">
         <h3 className="text-lg font-semibold leading-snug">
-          Boyanov-Naydenov problem and the inequalities of various metrics
+          Representation of quadric surfaces through rational Bezier Triangles over the Simplex
         </h3>
         <p className="text-base text-gray-700 mt-1">
-          Daniil Doroshenko <span className="text-gray-600">(Oles Honchar Dnipro National University)</span>
+          Andrés Quintana Martin <span className="text-gray-600">(University of Granada, Spain)</span>
         </p>
       </div>
 
@@ -818,10 +818,10 @@ const ProgramSection: React.FC = () => {
               {/* 16:15–17:15 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>16:15–17:15</td>
-                <td className={c.s1}>Seminar-1</td>
+                <td className={c.s1}>Seminar-Dmytryshyn</td>
                 <td className={c.poster}>Poster Session</td>
                 {/* (omitimos Wed por rowSpan) */}
-                <td className={c.s2}>Seminar-2</td>
+                <td className={c.s2}>Seminar-Themistoclakis</td>
                 <td className={c.gray}></td>
               </tr>
 
@@ -891,11 +891,11 @@ const ProgramSection: React.FC = () => {
           </div>
           <div className="flex items-center gap-2">
             <span className={`inline-block h-5 w-28 rounded ${c.s1}`} />
-            <span>Seminar-1</span>
+            <span>Seminar-Dmytryshyn</span>
           </div>
           <div className="flex items-center gap-2">
             <span className={`inline-block h-5 w-28 rounded ${c.s2}`} />
-            <span>Seminar-2</span>
+            <span>Seminar-Themistoclakis</span>
           </div>
           <div className="flex items-center gap-2">
             <span className={`inline-block h-5 w-20 rounded ${c.gray}`} />
