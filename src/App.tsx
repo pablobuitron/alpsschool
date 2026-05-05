@@ -321,7 +321,7 @@ const AboutSection: React.FC = () => (
       </p>
 
       <p>
-        The scientific program will include two courses of 8 hours each, two seminars, five working groups, and a poster session.
+        The scientific program will include two courses of 8 hours each, two seminars, four working groups, and a poster session.
       </p>
 
       <p>
@@ -333,7 +333,7 @@ const AboutSection: React.FC = () => (
       </p>
 
       <p>
-        <strong>A certificate of attendance and number of 4 ECTS will be assigned.</strong>
+        <strong>A certificate of attendance and number of 5 ECTS will be assigned.</strong>
       </p>
 
       <p>
@@ -482,14 +482,7 @@ const PostersSection: React.FC = () => (
         </p>
       </div>
 
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          Representation of quadric surfaces through rational Bezier Triangles over the Simplex
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Andrés Quintana Martin <span className="text-gray-600">(University of Granada, Spain)</span>
-        </p>
-      </div>
+      
 
       <div className="border-b border-gray-200 pb-4">
         <h3 className="text-lg font-semibold leading-snug">
@@ -518,12 +511,14 @@ const PostersSection: React.FC = () => (
         </p>
       </div>
 
+      
+
       <div className="border-b border-gray-200 pb-4">
         <h3 className="text-lg font-semibold leading-snug">
-          Reliable computation of Gegenbauer-Sobolev polynomials and their zeros
+          Representation of quadric surfaces through rational Bezier Triangles over the Simplex
         </h3>
         <p className="text-base text-gray-700 mt-1">
-          Niel Van Buggenhout <span className="text-gray-600">(Universidad Carlos III de Madrid)</span>
+          Andrés Quintana Martin <span className="text-gray-600">(University of Granada, Spain)</span>
         </p>
       </div>
 
@@ -533,6 +528,15 @@ const PostersSection: React.FC = () => (
         </h3>
         <p className="text-base text-gray-700 mt-1">
           Giuseppe Rodriguez <span className="text-gray-600">(University of Cagliari)</span>
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          Reliable computation of Gegenbauer-Sobolev polynomials and their zeros
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Niel Van Buggenhout <span className="text-gray-600">(Universidad Carlos III de Madrid)</span>
         </p>
       </div>
 
@@ -775,7 +779,7 @@ const ProgramSection: React.FC = () => {
               {/* 12:45–14:00 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>12:45</td>
-                <td className="bg-white">Registration</td>
+                <td className={c.gray}></td>
                 <td className="bg-white">Lunch</td>
                 <td className="bg-white">Lunch</td>
                 <td className="bg-white">Lunch</td>
@@ -784,8 +788,8 @@ const ProgramSection: React.FC = () => {
 
               {/* 14:00–14:15  — INICIO del rowSpan para MIÉRCOLES */}
               <tr>
-                <td className={`p-1 ${c.time}`}>14:00–14:15</td>
-                <td className={c.gray}></td>
+                <td className={`p-1 ${c.time}`}>13:15–14:15</td>
+                <td className="bg-white">Registration</td>
                 <td className={c.gray}></td>
                 {/* Wed: celda combinada para 7 filas (14:00 → 19:00) */}
                 <td rowSpan={7} className="bg-white align-middle font-medium">
