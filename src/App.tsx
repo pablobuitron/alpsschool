@@ -254,7 +254,7 @@ const HomeSection: React.FC = () => (
           <img
             src="./Logo-DM.png"
             alt="University of Padua"
-            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
+            className="h-38 object-contain bg-white p-4 rounded-lg shadow"
           />
 
           {/* Uninettuno non mate */}
