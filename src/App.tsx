@@ -252,7 +252,7 @@ const HomeSection: React.FC = () => (
 
           {/* Padova */}
           <img
-            src="./padovalogo.jpeg"
+            src="./Logo-DM.png"
             alt="University of Padua"
             className="h-40 object-contain bg-white p-4 rounded-lg shadow"
           />
