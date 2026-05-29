@@ -24,7 +24,6 @@ function App() {
   ];
 
   const scientificCommittee: Member[] = [
-    { name: 'Praveen Agarwal', affiliation: 'ANAND ICE College, Jaipur, India' },
     { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
     { name: 'Clemente Cesarano', affiliation: 'Uninettuno University' },
     { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
@@ -482,6 +481,15 @@ const PostersSection: React.FC = () => (
         </p>
       </div>
 
+      <div className="border-b border-gray-200 pb-4">
+        <h3 className="text-lg font-semibold leading-snug">
+          Anti-Gauss Lagrange interpolation: Christoffel-Darboux form, barycentric representation, and orthogonal expansion
+        </h3>
+        <p className="text-base text-gray-700 mt-1">
+          Patricia Díaz de Alba <span className="text-gray-600">(University of Cagliari)</span>
+        </p>
+      </div>
+
       
 
       <div className="border-b border-gray-200 pb-4">
@@ -770,8 +778,8 @@ const ProgramSection: React.FC = () => {
               <tr>
                 <td className={`p-1 ${c.time}`}>12:30–12:45</td>
                 <td className={c.gray}></td>
-                <td className={c.gray}></td>
                 <td className="bg-white">Photo</td>
+                <td className={c.gray}></td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
@@ -859,13 +867,13 @@ const ProgramSection: React.FC = () => {
                 <td className={c.gray}></td>
               </tr>
 
-              {/* 19:00 */}
+              {/* 19:30 */}
               <tr>
                 <td className={`p-1 ${c.time}`}>19:30</td>
                 <td className={c.dinner}>Dinner</td>
                 <td className={c.dinner}>Dinner</td>
-                <td className={c.dinner}>Dinner</td>
                 <td className={c.dinner}>Social Dinner</td>
+                <td className={c.dinner}>Dinner</td>
                 <td className={c.gray}></td>
               </tr>
             </tbody>
