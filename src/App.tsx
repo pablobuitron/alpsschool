@@ -401,7 +401,7 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
       topic: 'Meshless methods and scientific Machine Learning',
     },
     {
-      names: ['Clemente Cesarano', 'Praveen Agarwal'],
+      names: ['Clemente Cesarano'],
       topic: 'Operator theory in describing and analyzing special polynomials',
     },
   ];
